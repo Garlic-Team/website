@@ -25,7 +25,7 @@ export default defineConfig({
 		VitePWA({
 			srcDir: 'src',
 			filename: 'sw.ts',
-			base: '/website/',
+			base: '/',
 			strategies: 'injectManifest',
 			registerType: 'autoUpdate',
 			manifest: {
