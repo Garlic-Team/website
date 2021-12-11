@@ -25,18 +25,18 @@ export default defineConfig({
 		VitePWA({
 			srcDir: 'src',
 			filename: 'sw.ts',
-			base: '/',
+			base: '/website/',
 			strategies: 'injectManifest',
 			registerType: 'autoUpdate',
 			manifest: {
 				theme_color: '#090a16',
 				background_color: '#090a16',
-				name: 'Discord.js Docs',
-				short_name: 'd.js Docs',
+				name: 'Garlic-Team Docs',
+				short_name: 'g.t Docs',
 				start_url: '.',
 				display: 'standalone',
 				description:
-					"Discord.js is a powerful Node.js module that allows you to interact with the Discord API very easily. It takes a much more object-oriented approach than most other JS Discord libraries, making your bot's code significantly tidier and easier to comprehend.",
+					"Powerful and flexible discord.js framework!",
 				icons: [
 					{
 						src: '/android-chrome-192x192.png',
