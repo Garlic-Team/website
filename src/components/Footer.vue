@@ -2,7 +2,9 @@
 	<footer class="bg-discord-blurple-560">
 		<div class="max-w-3xl mx-auto text-center px-16 pt-10 pb-4 text-gray-200">
 			<strong><router-link to="/">Garlic-Team</router-link></strong>
-			<p class="mb-4">Powerful and flexible discord.js framework!</p>
+			<p class="mb-4">
+				Powerful and flexible discord.js framework!<br />Website originally created by the discord.js team
+			</p>
 			<Stats class="mb-4" />
 			<p class="text-xs break-words-legacy">
 				commit: {{ gitCommit }}<br />
