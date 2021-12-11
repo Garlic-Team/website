@@ -1,7 +1,7 @@
 {
-	"name": "discord.js-website",
+	"name": "garlic-team-website",
 	"version": "3.0.0",
-	"description": "The website housing documentation for discord.js",
+	"description": "The website housing documentation for garlic-team",
 	"author": "Noel Buechler <icrawltogo@outlook.com>",
 	"contributors": [
 		"Amish Shah <amishshah.2k@gmail.com>",
@@ -57,7 +57,7 @@
 		"postcss-focus-visible": "^5.0.0",
 		"prettier": "^2.3.2",
 		"tailwindcss": "^2.2.7",
-		"typescript": "^4.3.5",
+		"typescript": "^4.5.3",
 		"vite": "^2.4.4",
 		"vite-plugin-components": "^0.13.2",
 		"vite-plugin-icons": "^0.6.5",
@@ -65,9 +65,9 @@
 		"vite-plugin-pwa": "^0.8.2",
 		"vue-eslint-parser": "^7.10.0",
 		"vue-tsc": "^0.2.2",
-		"workbox-cacheable-response": "^6.1.5",
+		"workbox-cacheable-response": "^6.4.2",
 		"workbox-core": "^6.1.5",
-		"workbox-expiration": "^6.1.5",
+		"workbox-expiration": "^6.4.2",
 		"workbox-precaching": "^6.1.5",
 		"workbox-routing": "^6.1.5",
 		"workbox-strategies": "^6.1.5"

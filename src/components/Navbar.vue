@@ -20,7 +20,7 @@
 						"
 						active-class="bg-discord-blurple-600"
 					>
-						discord.js
+						Garlic Team
 					</router-link>
 
 					<router-link
@@ -65,7 +65,7 @@
 					</a>
 
 					<a
-						href="https://discordjs.guide"
+						href="https://garlic-team.js.org/guide"
 						class="
 							text-gray-200
 							hover:bg-discord-blurple-630 hover:text-white
@@ -278,7 +278,7 @@
 								font-semibold
 							"
 							@click="isOpen = !isOpen"
-							>discord.js</router-link
+							>Garlic Team</router-link
 						>
 
 						<router-link

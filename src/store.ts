@@ -3,11 +3,9 @@ import { createStore, useStore as baseUseStore, Store } from 'vuex';
 
 import DocsSource from './data/DocsSource';
 import MainSource from './data/MainSource';
-import CollectionSource from '~/data/CollectionSource';
-import BuildersSource from '~/data/BuildersSource';
-import VoiceSource from '~/data/VoiceSource';
-import CommandoSource from '~/data/CommandoSource';
-import RPCSource from '~/data/RPCSource';
+import HyttpoSource from '~/data/HyttpoSource';
+import GEventsSource from '~/data/GEventsSource';
+import GComponentsSource from '~/data/GComponentsSource';
 
 import { Documentation, DocumentationCustomFile } from './interfaces/Documentation';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
@@ -36,11 +34,9 @@ export const store = createStore<State>({
 	state: {
 		sources: [
 			{ source: MainSource, name: MainSource.name, id: MainSource.id },
-			{ source: CollectionSource, name: CollectionSource.name, id: CollectionSource.id },
-			{ source: BuildersSource, name: BuildersSource.name, id: BuildersSource.id },
-			{ source: VoiceSource, name: VoiceSource.name, id: VoiceSource.id },
-			{ source: CommandoSource, name: CommandoSource.name, id: CommandoSource.id },
-			{ source: RPCSource, name: RPCSource.name, id: RPCSource.id },
+			{ source: GEventsSource, name: GEventsSource.name, id: GEventsSource.id },
+			{ source: GComponentsSource, name: GComponentsSource.name, id: GComponentsSource.id },
+			{ source: HyttpoSource, name: HyttpoSource.name, id: HyttpoSource.id },
 		],
 		source: MainSource,
 		tag: MainSource.defaultTag,
@@ -48,9 +44,9 @@ export const store = createStore<State>({
 		branches: [],
 		file: null,
 		stats: {
-			downloads: `${(225_000_000).toLocaleString()}+`,
-			stars: `${(11_000).toLocaleString()}+`,
-			contributors: `${(100).toLocaleString()}+`,
+			downloads: `${(56_000).toLocaleString()}+`,
+			stars: `${(50).toLocaleString()}+`,
+			contributors: `${(10).toLocaleString()}+`,
 		},
 		searchIndex: [],
 		searchRef: [],
@@ -90,9 +86,9 @@ export const store = createStore<State>({
 			const noop = () => {};
 
 			const [fetchedDownloads, fetchedStars, fetchedContributors] = await Promise.all([
-				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js/stats/contributors').then(toJSON, noop),
+				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/gcommands').then(toJSON, noop),
+				fetch('https://api.github.com/repos/Garlic-Team/GCommands').then(toJSON, noop),
+				fetch('https://api.github.com/repos/Garlic-Team/GCommands/stats/contributors').then(toJSON, noop),
 			]);
 
 			if (fetchedDownloads) {

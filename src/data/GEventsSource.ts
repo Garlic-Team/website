@@ -4,11 +4,12 @@ import DocsSource from './DocsSource';
 
 const branchBlacklist = new Set(['docs']);
 export default new DocsSource({
-	id: 'builders',
-	name: 'Builders',
-	global: 'Builders',
-	repo: 'discordjs/builders',
-	defaultTag: 'stable',
+	id: 'gevents',
+	name: 'GEvents',
+	global: 'GEvents',
+	repo: 'Garlic-Team/GEvents',
+	docsFolder: '/docs',
+	defaultTag: 'master',
 	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
-	tagFilter: (tag: string) => semver.gte(tag.replace(/^v/, ''), '0.8.1'),
+	tagFilter: (tag: string) => semver.gt(tag.replace(/^v/, ''), '0.4.1'),
 });
