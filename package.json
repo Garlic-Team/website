@@ -13,7 +13,7 @@
 		"lint:fix": "eslint src --ext .ts,.vue --fix",
 		"dev": "vite --port 3333",
 		"dev:open": "vite --port 3333 --open",
-		"build": "vue-tsc --noEmit && vite build --base=/website/",
+		"build": "vue-tsc --noEmit && vite build",
 		"serve": "vite preview"
 	},
 	"license": "Apache-2.0",
