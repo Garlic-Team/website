@@ -316,7 +316,7 @@
 						/></a>
 
 						<a
-							href="https://discordjs.guide"
+							href="https://garlic-team.js.org/guide"
 							class="
 								text-gray-200
 								hover:bg-discord-blurple-630 hover:text-white
