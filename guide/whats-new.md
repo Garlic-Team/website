@@ -33,11 +33,11 @@
 ## Site
 
 - This fancy new URL to host all Garlic-Team projects
-- Probably this guide is new
+- This guide is also new I guess
 
 <DiscordMessages>
 	<DiscordMessage profile="bot">
-		Thank you to all of those that contributed to the development of discord.js and the guide!
+		Thank you to all of those that contributed to the development of GCommands Next and the guide!
 		<span class="emoji-container">
 			<img class="emoji-image" title="heart" src="https://twemoji.maxcdn.com/v/13.1.0/72x72/2764.png" alt="" />
 		</span>
