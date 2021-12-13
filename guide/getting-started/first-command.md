@@ -4,7 +4,7 @@ Remember the path we set when creating the client? Navigate to your `commands` f
 create a new JS file. You will create your first command there, exited?
 
 :::: code-group
-::: code-group-item with new
+::: code-group-item command
 
 ```js
 const { Command, CommandType } = require('gcommands');
@@ -22,7 +22,7 @@ new Command('hello', {
 ```
 
 :::
-::: code-group-item with class
+::: code-group-item class command
 
 ```js
 const { Command, CommandType } = require('gcommands');
