@@ -125,5 +125,12 @@ export default {
 				'/whats-new.md',
 			],
 		},
+		{
+			text: 'Getting started',
+			children: [
+				'/getting-started/',
+				'/getting-started/first-command'
+			]
+		}
 	],
 };
