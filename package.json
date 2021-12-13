@@ -1,6 +1,6 @@
 {
-    "name": "discord.js-guide",
-    "description": "Imagine a guide... that explores the many possibilities for your discord.js bot.",
+    "name": "garlic-team-guide",
+    "description": "Garlic Team guide (originally by djs)",
     "version": "3.0.0",
     "private": true,
     "scripts": {

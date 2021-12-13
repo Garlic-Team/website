@@ -1,5 +1,5 @@
 export default {
-	'/voice/': [
+	'/gcommands-latest/': [
 		{
 			text: 'Home',
 			children: [
@@ -9,20 +9,112 @@ export default {
 			],
 		},
 		{
-			text: 'Getting Started',
+			text: 'Getting started',
 			children: [
-				'/voice/',
-			],
+				'/gcommands-latest/gettingstarted/installation.md',
+				'/gcommands-latest/gettingstarted/basicbot.md'
+			]
 		},
 		{
-			text: 'Library',
+			text: 'Commands',
 			children: [
-				'/voice/life-cycles.md',
-				'/voice/voice-connections.md',
-				'/voice/audio-player.md',
-				'/voice/audio-resources.md',
-			],
+				'/gcommands-latest/commands/gettingstarted.md',
+				'/gcommands-latest/commands/first.md',
+				'/gcommands-latest/commands/usingargs.md',
+				'/gcommands-latest/commands/usingsub.md',
+				'/gcommands-latest/commands/usingbuilders.md',
+				'/gcommands-latest/commands/additionalfeatures.md'
+			]
 		},
+		{
+			text: 'Interactions',
+			children: [
+				'/gcommands-latest/interactions/contextmenus.md',
+				'/gcommands-latest/interactions/messagecomponents.md'
+			]
+		},
+		{
+			text: 'Events',
+			children: [
+				'/gcommands-latest/events/setup.md',
+				'/gcommands-latest/events/create.md',
+				'/gcommands-latest/events/usingbuilder.md',
+				'/gcommands-latest/events/moreevents.md'
+			]
+		},
+		{
+			text: 'Components',
+			children: [
+				'/gcommands-latest/components/setup.md',
+				'/gcommands-latest/components/create.md',
+			]
+		},
+		{
+			text: 'Database',
+			children: [
+				'/gcommands-latest/database/setup.md',
+				'/gcommands-latest/database/prefix.md',
+				'/gcommands-latest/database/guildlanguage.md'
+			]
+		},
+		{
+			text: 'Other',
+			children: [
+				'/gcommands-latest/other/customlanguagefile.md',
+				'/gcommands-latest/other/inhibitor.md',
+				'/gcommands-latest/other/mentions.md',
+				'/gcommands-latest/other/alwaysobtain.md'
+			]
+		},
+		{
+			text: 'Common questions',
+			children: [
+				'/gcommands-latest/questions/commandrunoptions.md',
+				'/gcommands-latest/questions/guildundefined.md',
+				'/gcommands-latest/questions/missingacces.md'
+			]
+		},
+		{
+			text: 'Additionals',
+			children: [
+				'/gcommands-latest/additional/fromv7tov8.md',
+				'/gcommands-latest/additional/fromv6tov7.md',
+				'/gcommands-latest/additional/fromv5tov6.md',
+				'/gcommands-latest/additional/fromv4tov5.md',
+				'/gcommands-latest/additional/fromv3tov4.md',
+				'/gcommands-latest/additional/fromv2tov3.md'
+			]
+		}
+	],
+	'/gevents/': [
+		{
+			text: 'Home',
+			children: [
+				'/',
+				'/requesting-more-content.md',
+				'/whats-new.md',
+			],
+		}
+	],
+	'/gcomponents/': [
+		{
+			text: 'Home',
+			children: [
+				'/',
+				'/requesting-more-content.md',
+				'/whats-new.md',
+			],
+		}
+	],
+	'/hyttpo/': [
+		{
+			text: 'Home',
+			children: [
+				'/',
+				'/requesting-more-content.md',
+				'/whats-new.md',
+			],
+		}
 	],
 	'/': [
 		{
@@ -31,100 +123,6 @@ export default {
 				'/',
 				'/requesting-more-content.md',
 				'/whats-new.md',
-			],
-		},
-		{
-			text: 'Installations & Preparations',
-			children: [
-				'/preparations/',
-				'/preparations/setting-up-a-linter.md',
-				'/preparations/setting-up-a-bot-application.md',
-				'/preparations/adding-your-bot-to-servers.md',
-			],
-		},
-		{
-			text: 'Creating Your Bot',
-			children: [
-				'/creating-your-bot/',
-				'/creating-your-bot/creating-commands.md',
-				'/creating-your-bot/command-handling/',
-				'/creating-your-bot/event-handling/',
-			],
-		},
-		{
-			text: 'Interactions',
-			children: [
-				'/interactions/registering-slash-commands.md',
-				'/interactions/replying-to-slash-commands.md',
-				'/interactions/slash-command-permissions.md',
-				'/interactions/buttons.md',
-				'/interactions/select-menus.md',
-			],
-		},
-		{
-			text: 'Popular Topics',
-			children: [
-				'/popular-topics/faq.md',
-				'/popular-topics/threads.md',
-				'/popular-topics/embeds.md',
-				'/popular-topics/builders.md',
-				'/popular-topics/reactions.md',
-				'/popular-topics/collectors.md',
-				'/popular-topics/permissions.md',
-				'/popular-topics/permissions-extended.md',
-				'/popular-topics/intents.md',
-				'/popular-topics/partials.md',
-				'/popular-topics/webhooks.md',
-				'/popular-topics/errors.md',
-				'/popular-topics/audit-logs.md',
-				'/popular-topics/canvas.md',
-			],
-		},
-		{
-			text: 'Miscellaneous',
-			children: [
-				'/miscellaneous/parsing-mention-arguments.md',
-				'/miscellaneous/useful-packages.md',
-			],
-		},
-		{
-			text: 'Databases',
-			children: [
-				'/sequelize/',
-				'/sequelize/currency.md',
-				'/keyv/',
-			],
-		},
-		{
-			text: 'Sharding',
-			children: [
-				'/sharding/',
-				'/sharding/additional-information.md',
-				'/sharding/extended.md',
-			],
-		},
-		{
-			text: 'OAuth2',
-			children: [
-				'/oauth2/',
-			],
-		},
-		{
-			text: 'Improving Your Dev Environment',
-			children: [
-				'/improving-dev-environment/pm2.md',
-				'/improving-dev-environment/package-json-scripts.md',
-			],
-		},
-		{
-			text: 'Additional Information',
-			children: [
-				'/additional-info/notation.md',
-				'/additional-info/es6-syntax.md',
-				'/additional-info/collections.md',
-				'/additional-info/async-await.md',
-				'/additional-info/rest-api.md',
-				'/additional-info/changes-in-v13.md',
 			],
 		},
 	],
