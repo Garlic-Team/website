@@ -18,8 +18,12 @@ If you have mongodb from their site and the connection uri has `+srv` for mongod
 
 For example, this is what the final database addition will look like:
 ```js
+const KeyvSQLite = require('@keyvhq/sqlite');
+
 new GCommandsClient({
     ...options
-    database: "sqlite://db/gcommands.sqlite"
+    database: ({ store: new KeyvSQlite('sqlite://db/gcommands.sqlite') })
 })
 ```
+
+More info [here](https://keyv.js.org/)
