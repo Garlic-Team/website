@@ -9,6 +9,7 @@ and [create a new issue](https://github.com/Garlic-team/website/issues/new)! Tit
 exactly what you mean inside the issue description. Make sure that you've looked around the site before making a
 request; what you want to request might already exist!
 
-::: tip Remember that you can always [fork the repo](https://github.com/Garlic-Team/website)
+::: tip
+Remember that you can always [fork the repo](https://github.com/Garlic-Team/website)
 and [make a pull request](https://github.com/Garlic-Team/website/pulls) if you want to add anything to the guide yourself!
 :::
