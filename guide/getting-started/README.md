@@ -31,16 +31,21 @@ pnpm add gcommands@next-dev
 
 ## Basic client
 
-:::tip It's recommended to use a .env for storing your bots token. :::
+:::tip 
+It's recommended to use a .env for storing your bots token.
+:::
 
 Let's get started by creating a new GClient! The GClient is the hub that will be running your bot (connecting to the
 discord API).
 
+:::: code-group
+::: code-group-item index.js
+
 ```js
 require('dotenv').config();
-const {GClient} = require('gcommands');
-const {Intents} = require('discord.js');
-const path = require('path');
+const { GClient } = require('gcommands');
+const { Intents } = require('discord.js');
+const { join } = require('path');
 
 // Search for plugins in node_modules (folder names starting with gcommands-plugin-) or plugins folder
 GClient.gplugins.search(__dirname);
@@ -48,9 +53,9 @@ GClient.gplugins.search(__dirname);
 const client = new GClient({
 	// Register the directories where your commands/components/listeners will be located.
 	dirs: [
-		path.join(__dirname, 'commands'),
-		path.join(__dirname, 'components'),
-		path.join(__dirname, 'listeners')
+		join(__dirname, 'commands'),
+		join(__dirname, 'components'),
+		join(__dirname, 'listeners')
 	],
 	// Set the prefix for message commands
 	messagePrefix: '!',
@@ -69,6 +74,17 @@ client.on('warn', console.log);
 // Login to the discord API
 client.login(process.env.token);
 ```
+:::
+
+::: code-group-item .env
+
+```
+TOKEN=your discord bot token from discord.dev
+```
+
+:::
+
+:::
 
 That's it! Try running `node index.js` in your terminal!
 

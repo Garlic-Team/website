@@ -16,18 +16,18 @@ import {
 } from '@discord-message-components/vue';
 import DocsLink from './components/DocsLink.vue';
 import ResultingCode from './components/ResultingCode.vue';
-import djsAvatar from './assets/discord-avatar-djs.png';
+import gcommandsAvatar from './assets/gcommands-avatar.gif';
 import '@discord-message-components/vue/dist/style.css';
 
 export default defineClientAppEnhance(({ app }) => {
 	app.use(DiscordMessageComponents, {
 		avatars: {
-			djs: djsAvatar,
+			gcommands: gcommandsAvatar,
 		},
 		profiles: {
 			user: {
 				author: 'User',
-				avatar: 'djs',
+				avatar: 'gcommands',
 			},
 			bot: {
 				author: 'Guide Bot',

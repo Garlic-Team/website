@@ -7,7 +7,7 @@ create a new JS file. You will create your first command there, exited?
 ::: code-group-item new
 
 ```js
-const {Command, CommandType} = require('gcommands');
+const { Command, CommandType } = require('gcommands');
 
 // Create a new command with the name 'hello'
 new Command('hello', {
@@ -25,7 +25,7 @@ new Command('hello', {
 ::: code-group-item class
 
 ```js
-const {Command, CommandType} = require('gcommands');
+const { Command, CommandType } = require('gcommands');
 
 // Create a new command with the name 'hello-class'
 new class extends Command {
@@ -47,6 +47,8 @@ new class extends Command {
 :::
 ::::
 
-:::tip Creating commands with new was introduced in GCommands Next with the main purpose of making your code look more
-clean! You can use the method your prefer. :::
+:::tip 
+Creating commands with new was introduced in GCommands Next with the main purpose of making your code look more
+clean! You can use the method your prefer.
+:::
 

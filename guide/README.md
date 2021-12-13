@@ -2,7 +2,9 @@
 
 ![BANNER](./images/branding/banner.png)
 
-:::danger GCommands Next is a open beta :::
+:::danger
+GCommands Next is a open beta
+:::
 
 If you're reading this, it probably means you want to learn how to make a bot with GCommands Next. Awesome! You've come
 to the right place. This guide will teach you things such as:
@@ -18,7 +20,9 @@ to the right place. This guide will teach you things such as:
 
 ## Before you begin...
 
-:::tip This guide is much easier to follow if you have existing knowledge of [discordJS](https://discordjs.guide/) :::
+:::tip 
+This guide is much easier to follow if you have existing knowledge of [discord.js](https://discordjs.guide/)
+:::
 
 Alright, making a bot is cool and all, but there are some prerequisites to it. To create a bot with GCommands Next, you
 should have a fairly decent grasp of JavaScript itself. While you _can_ make a bot with very little JavaScript and
@@ -37,7 +41,3 @@ If you don't know JavaScript but would like to learn about it, here are a few li
 
 Take your pick, learn some JavaScript, and once you feel like you're confident enough to make a bot, come back and get
 started!
-
-<a href="https://www.netlify.com">
-	<img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
-</a>
