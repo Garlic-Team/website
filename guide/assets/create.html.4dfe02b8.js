@@ -1,1 +1,0 @@
-const e={key:"v-32fcfe16",path:"/gcommands-latest/components/create.html",title:"Creating a component",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Resulting code",slug:"resulting-code",children:[]}],filePathRelative:"gcommands-latest/components/create.md",git:{updatedTime:1639416682e3}};export{e as data};
