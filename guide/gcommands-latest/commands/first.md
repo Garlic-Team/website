@@ -48,7 +48,8 @@ run({ respond, author }) {
   respond(`Hello **${author.tag}**!`); // Send a response
 }
 ```
-s
+
+
 The `respond` function allows you to send responses with message, slash and context menu commands.  
 The respond function works the same way as `TextBasedChannel.send` function but has more options. You can find them [here](https://gcommands.js.org/docs/#/docs/main/dev/typedef/GPayloadOptions)
 
