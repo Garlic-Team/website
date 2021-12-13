@@ -31,7 +31,7 @@ pnpm add gcommands@next-dev
 
 ## Basic client
 
-:::tip It's recommended to use a .env for storing your bots token.:::
+:::tip It's recommended to use a .env for storing your bots token. :::
 
 Let's get started by creating a new GClient! The GClient is the hub that will be running your bot (connecting to the
 discord API).

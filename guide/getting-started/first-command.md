@@ -47,7 +47,6 @@ new class extends Command {
 :::
 ::::
 
-:::tip Creating commands with `new` was introduced in GCommands Next with the main purpose of making your code look more
-clean! You can use the method your prefer.
-:::
+:::tip Creating commands with new was introduced in GCommands Next with the main purpose of making your code look more
+clean! You can use the method your prefer. :::
 
