@@ -129,7 +129,9 @@ export default {
 			text: 'Getting started',
 			children: [
 				'/getting-started/',
-				'/getting-started/first-command'
+				'/getting-started/first-command',
+				'/getting-started/first-component',
+				'/getting-started/first-listener'
 			]
 		}
 	],
