@@ -35,8 +35,7 @@ pnpm add gcommands@next-dev
 It's recommended to use a .env for storing your bots token.
 :::
 
-Let's get started by creating a new GClient! The GClient is the hub that will be running your bot (connecting to the
-discord API).
+Let's get started by creating a new GClient! The GClient is the hub that will be running your bot.
 
 :::: code-group
 ::: code-group-item index.js
@@ -59,7 +58,7 @@ const client = new GClient({
 	],
 	// Set the prefix for message commands
 	messagePrefix: '!',
-	// Set the guildId where you will be developing your bot. This is usefull cause guild slash commands update instantly.
+	// Set the guild where you will be developing your bot. This is usefull cause guild slash commands update instantly.
 	devGuildId: process.env.DEV_SERVER,
 	// Set the global cooldown for your bot
 	cooldown: '30s',
@@ -80,6 +79,7 @@ client.login(process.env.token);
 
 ```
 TOKEN=your discord bot token from discord.dev
+DEV_SERVER=your discord guild id here
 ```
 
 :::
