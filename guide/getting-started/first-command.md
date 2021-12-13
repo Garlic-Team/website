@@ -52,7 +52,7 @@ Creating commands with new was introduced in GCommands Next with the main purpos
 clean! You can use the method your prefer.
 :::
 
-Restart your bot, and you should see the `hello` slash commands pop-up in your dev-server. Go ahead and give it a try!
+Restart your bot, and you should see the `hello` slash command pop-up in your dev-server. Go ahead and give it a try!
 
 <DiscordMessages>
 	<DiscordMessage profile="bot">
@@ -63,6 +63,17 @@ Restart your bot, and you should see the `hello` slash commands pop-up in your d
 				:command="true"
 			>hello</DiscordInteraction>
 		</template>
+		Hello S222em!
+	</DiscordMessage>
+</DiscordMessages>
+
+You can also use the message command
+
+<DiscordMessages>
+	<DiscordMessage profile="user">
+		.hello
+	</DiscordMessage>
+	<DiscordMessage profile="bot">
 		Hello S222em!
 	</DiscordMessage>
 </DiscordMessages>
