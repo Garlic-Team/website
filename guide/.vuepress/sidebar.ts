@@ -29,8 +29,7 @@ export default {
 		{
 			text: 'Interactions',
 			children: [
-				'/gcommands-latest/interactions/contextmenus.md',
-				'/gcommands-latest/interactions/messagecomponents.md'
+				'/gcommands-latest/interactions/contextmenus.md'
 			]
 		},
 		{
@@ -114,6 +113,27 @@ export default {
 				'/requesting-more-content.md',
 				'/whats-new.md',
 			],
+		},
+		{
+			text: 'Getting started',
+			children: [
+				'/hyttpo/getting-started/',
+				'/hyttpo/getting-started/first-request.md'
+			]
+		},
+		{
+			text: 'Other',
+			children: [
+				'/hyttpo/other/methods.md',
+				'/hyttpo/other/async.md',
+				'/hyttpo/other/events.md'
+			]
+		},
+		{
+			text: 'Examples',
+			children: [
+				'/hyttpo/examples/downloader.md'
+			]
 		}
 	],
 	'/': [
