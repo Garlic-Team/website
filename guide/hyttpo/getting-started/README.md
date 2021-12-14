@@ -43,7 +43,7 @@ const hyttpo = require('hyttpo').default;
 
 ::: code-group-item ESM
 ```js
-import hyttpo from 'hyttpo';
+import { hyttpo } from 'hyttpo';
 ```
 :::
 

@@ -35,7 +35,7 @@ hyttpo.request({
 
 ::: code-group-item ESM (GET)
 ```js
-import hyttpo from 'hyttpo';
+import { hyttpo } from 'hyttpo';
 
 hyttpo.request({
     method: 'GET',
@@ -68,7 +68,7 @@ hyttpo.request({
 
 ::: code-group-item ESM (POST)
 ```js
-import hyttpo from 'hyttpo';
+import { hyttpo } from 'hyttpo';
 
 hyttpo.request({
     method: 'POST',

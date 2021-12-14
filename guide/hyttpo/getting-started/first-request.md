@@ -21,7 +21,7 @@ hyttpo.request({
 
 ::: code-group-item ESM
 ```js
-import hyttpo from 'hyttpo';
+import { hyttpo } from 'hyttpo';
 
 hyttpo.request({
     method: 'GET',

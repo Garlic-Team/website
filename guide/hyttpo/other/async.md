@@ -23,7 +23,7 @@ const hyttpo = require('hyttpo').default;
 
 ::: code-group-item ESM (GET)
 ```js
-import hyttpo from 'hyttpo';
+import { hyttpo } from 'hyttpo';
 
 (async() => {
     const res = await hyttpo.request({
