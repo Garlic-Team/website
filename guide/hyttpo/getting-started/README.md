@@ -47,6 +47,12 @@ import { hyttpo } from 'hyttpo';
 ```
 :::
 
+::: code-group-item TS
+```ts
+import hyttpo from 'hyttpo';
+```
+:::
+
 ::::
 
 That's it! Try running `node index.js` in your terminal!

@@ -34,6 +34,21 @@ hyttpo.request({
 ```
 :::
 
+::: code-group-item TS
+```ts
+import hyttpo from 'hyttpo';
+
+hyttpo.request({
+    method: 'GET',
+    url: 'https://api.ipify.org/?format=json'
+})
+    .catch(e => e)
+    .then(res => {
+        console.log(res.data)
+    })
+```
+:::
+
 ::::
 
 Output:
