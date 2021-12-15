@@ -1,0 +1,1 @@
+const e={key:"v-1b1ba249",path:"/gcommands-latest/questions/guildundefined.html",title:"I keep getting the error .guild is not defined",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/questions/guildundefined.md",git:{updatedTime:1639576063e3}};export{e as data};

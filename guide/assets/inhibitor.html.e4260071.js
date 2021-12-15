@@ -1,1 +1,0 @@
-const t={key:"v-b8af5282",path:"/gcommands-latest/other/inhibitor.html",title:"Inhibitor",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/other/inhibitor.md",git:{updatedTime:1639485409e3}};export{t as data};
