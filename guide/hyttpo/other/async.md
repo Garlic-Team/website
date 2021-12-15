@@ -4,9 +4,6 @@ You don't have to use `.then` all the time, but you can use async.
 
 ## Example code
 
-:::: code-group
-
-::: code-group-item CJS
 ```js
 const hyttpo = require('hyttpo').default;
 
@@ -19,39 +16,6 @@ const hyttpo = require('hyttpo').default;
     console.log(res);
 })();
 ```
-:::
-
-::: code-group-item ESM
-```js
-import { hyttpo } from 'hyttpo';
-
-(async() => {
-    const res = await hyttpo.request({
-        method: 'GET',
-        url: 'https://api.ipify.org/?format=json'
-    }).catch(e => e)
-
-    console.log(res);
-})();
-```
-:::
-
-::: code-group-item TS
-```ts
-import hyttpo from 'hyttpo';
-
-(async() => {
-    const res = await hyttpo.request({
-        method: 'GET',
-        url: 'https://api.ipify.org/?format=json'
-    }).catch(e => e)
-
-    console.log(res);
-})();
-```
-:::
-
-::::
 
 ## Learn
 

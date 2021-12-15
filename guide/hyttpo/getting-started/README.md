@@ -53,6 +53,20 @@ import hyttpo from 'hyttpo';
 ```
 :::
 
+::: code-group-item BROWSER
+```html
+<script src='https://unpkg.com/browse/hyttpo@latest'></script>
+```
+
+```js
+// For frameworks like ReactJS, NextJS (JS)
+import { hyttpo } from 'hyttpo';
+
+// For frameworks like ReactJS, NextJS (TS)
+import hyttpo from 'hyttpo';
+```
+:::
+
 ::::
 
 That's it! Try running `node index.js` in your terminal!

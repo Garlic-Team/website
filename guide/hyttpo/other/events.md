@@ -6,16 +6,24 @@ Hyttpo emits events as well as the normal built-in [http](https://nodejs.org/api
 You can use [await](./async.md), but you have to use events in config.
 :::
 
-All events:
-- data
+### All events (EventEmitter):
+- data (only node.js)
 - error
 - end
+- response (only node.js)
+- downloadProgress (only browser)
+- uploadProgress (only browser)
+
+### All events (In PayloadRequest):
+- onData (only node.js)
+- onError
+- onEnd
+- onResponse (only node.js)
+- onDownloadProgress (only browser)
+- onUploadProgress (only browser)
 
 ## Example code (EventEmitter)
 
-:::: code-group
-
-::: code-group-item CJS
 ```js
 const hyttpo = require('hyttpo').default;
 
@@ -31,51 +39,9 @@ hyttpo.request({
         console.log(res.data)
     })
 ```
-:::
 
-::: code-group-item ESM
-```js
-import { hyttpo } from 'hyttpo';
+## Example code (In PayloadRequest)
 
-hyttpo.request({
-    method: 'GET',
-    url: 'url'
-})
-    .catch(e => e)
-    .on('data', console.log)
-    .on('error', console.log)
-    .on('end', () => console.log('Done!'))
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::: code-group-item TS
-```ts
-import hyttpo from 'hyttpo';
-
-hyttpo.request({
-    method: 'GET',
-    url: 'url'
-})
-    .catch(e => e)
-    .on('data', console.log)
-    .on('error', console.log)
-    .on('end', () => console.log('Done!'))
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::::
-
-## Example code (In config)
-
-:::: code-group
-
-::: code-group-item CJS
 ```js
 const hyttpo = require('hyttpo').default;
 
@@ -91,42 +57,5 @@ const hyttpo = require('hyttpo').default;
     console.log(res)
 })();
 ```
-:::
-
-::: code-group-item ESM
-```js
-import { hyttpo } from 'hyttpo';
-
-(async() => {
-    const res = await hyttpo.request({
-        method: 'GET',
-        url: 'url',
-        onData: (d) => console.log(d),
-        onError: (e) => console.log(e),
-        onEnd: () => console.log('end')
-    }).catch(e => e)
-
-    console.log(res)
-})();
-```
-:::
-
-::: code-group-item TS
-```ts
-import hyttpo from 'hyttpo';
-
-(async() => {
-    const res = await hyttpo.request({
-        method: 'GET',
-        url: 'url',
-        onData: (d) => console.log(d),
-        onError: (e) => console.log(e),
-        onEnd: () => console.log('end')
-    }).catch(e => e)
-
-    console.log(res)
-})();
-```
-:::
 
 ::::

@@ -18,7 +18,7 @@ All supported methods:
 
 :::: code-group
 
-::: code-group-item CJS (GET)
+::: code-group-item GET
 ```js
 const hyttpo = require('hyttpo').default;
 
@@ -33,75 +33,9 @@ hyttpo.request({
 ```
 :::
 
-::: code-group-item ESM (GET)
-```js
-import { hyttpo } from 'hyttpo';
-
-hyttpo.request({
-    method: 'GET',
-    url: 'https://api.ipify.org/?format=json'
-})
-    .catch(e => e)
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::: code-group-item TS (GET)
-```ts
-import hyttpo from 'hyttpo';
-
-hyttpo.request({
-    method: 'GET',
-    url: 'https://api.ipify.org/?format=json'
-})
-    .catch(e => e)
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::: code-group-item CJS (POST)
+::: code-group-item POST
 ```js
 const hyttpo = require('hyttpo').default;
-
-hyttpo.request({
-    method: 'POST',
-    url: 'url',
-    body: JSON.stringify({
-        data: 'omg'
-    })
-})
-    .catch(e => e)
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::: code-group-item ESM (POST)
-```js
-import { hyttpo } from 'hyttpo';
-
-hyttpo.request({
-    method: 'POST',
-    url: 'url',
-    body: JSON.stringify({
-        data: 'omg'
-    })
-})
-    .catch(e => e)
-    .then(res => {
-        console.log(res.data)
-    })
-```
-:::
-
-::: code-group-item TS (POST)
-```ts
-import { hyttpo } from 'hyttpo';
 
 hyttpo.request({
     method: 'POST',
