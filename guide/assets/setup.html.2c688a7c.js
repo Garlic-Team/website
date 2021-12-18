@@ -1,0 +1,1 @@
+const e={key:"v-140395e4",path:"/gcommands-latest/components/setup.html",title:"Setup",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/components/setup.md",git:{updatedTime:1639837323e3}};export{e as data};
