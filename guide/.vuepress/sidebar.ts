@@ -149,9 +149,15 @@ export default {
 			text: 'Getting started',
 			children: [
 				'/getting-started/',
-				'/getting-started/first-command',
-				'/getting-started/first-component',
-				'/getting-started/first-listener'
+				'/getting-started/first-command.md',
+				'/getting-started/first-component.md',
+				'/getting-started/first-listener.md'
+			]
+		},
+		{
+			text: 'Additional Information',
+			children: [
+				'/additional-information/changes-in-next.md'
 			]
 		}
 	],

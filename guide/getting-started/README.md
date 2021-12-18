@@ -42,12 +42,12 @@ Let's get started by creating a new GClient! The GClient is the hub that will be
 
 ```js
 require('dotenv').config();
-const { GClient } = require('gcommands');
+const { GClient, Plugins } = require('gcommands');
 const { Intents } = require('discord.js');
 const { join } = require('path');
 
 // Search for plugins in node_modules (folder names starting with gcommands-plugin-) or plugins folder
-GClient.gplugins.search(__dirname);
+Plugins.search(__dirname);
 
 const client = new GClient({
 	// Register the directories where your commands/components/listeners will be located.
