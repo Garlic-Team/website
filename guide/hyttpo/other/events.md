@@ -57,5 +57,3 @@ const hyttpo = require('hyttpo').default;
     console.log(res)
 })();
 ```
-
-::::

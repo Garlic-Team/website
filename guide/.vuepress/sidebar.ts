@@ -155,6 +155,12 @@ export default {
 			]
 		},
 		{
+			text: 'Plugins',
+			children: [
+				'/plugins/first-plugin.md'
+			]
+		},
+		{
 			text: 'Additional Information',
 			children: [
 				'/additional-information/changes-in-next.md'
