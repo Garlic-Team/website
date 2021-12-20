@@ -1,0 +1,1 @@
+const e={key:"v-1ea045f8",path:"/gcommands-latest/other/customlanguagefile.html",title:"Using a custom language file",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/other/customlanguagefile.md",git:{updatedTime:1639985994e3}};export{e as data};

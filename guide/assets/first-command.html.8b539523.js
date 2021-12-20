@@ -1,0 +1,1 @@
+const t={key:"v-b84954ca",path:"/getting-started/first-command.html",title:"Creating your first command",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"getting-started/first-command.md",git:{updatedTime:1639985994e3}};export{t as data};
