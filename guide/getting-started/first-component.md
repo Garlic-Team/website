@@ -58,7 +58,8 @@ Now open or create the `components` folder and create a new file in it.
 const {Component, ComponentType} = require('gcommands');
 
 // Create a new component with the name "hello", this name is the first argument of CustomId: CustomId('hello')
-new Component('hello', {
+new Component({
+	name: 'hello',
 	// Set the type of the component
 	type: [ComponentType.BUTTON],
 	// The function thats called when the button is pressed
@@ -77,7 +78,8 @@ const {Component, ComponentType} = require('gcommands');
 // Create a new component with the name "hello", this name is the first argument of CustomId: CustomId('hello')
 new class extends Component {
 	constructor() {
-		super('hello', {
+		super({
+			name: 'hello',
 			// Set the type of the component
 			type: [ComponentType.BUTTON],
 		});

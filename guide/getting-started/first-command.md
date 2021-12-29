@@ -10,7 +10,8 @@ create a new JS file. You will create your first command there, exited?
 const { Command, CommandType } = require('gcommands');
 
 // Create a new command with the name 'hello'
-new Command('hello', {
+new Command({
+	name: 'hello',
 	description: 'Says hello!',
 	// GCommands Next offers different types of commands, we will only use slash and message commands here.
 	type: [CommandType.SLASH, CommandType.MESSAGE],
@@ -30,7 +31,8 @@ const { Command, CommandType } = require('gcommands');
 // Create a new command with the name 'hello-class'
 new class extends Command {
 	constructor() {
-		super('hello', {
+		super({
+			name: 'hello',
 			description: 'Says hello!',
 			// GCommands Next offers different types of commands, we will only use slash and message commands here.
 			type: [CommandType.SLASH, CommandType.MESSAGE],
