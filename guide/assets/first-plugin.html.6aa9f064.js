@@ -1,1 +1,0 @@
-import{o as r,c as a,a as i,d as e}from"./app.acf204c7.js";const n={},t={id:"creating-your-first-plugin",tabindex:"-1"},s=[i("a",{class:"header-anchor",href:"#creating-your-first-plugin","aria-hidden":"true"},"#",-1),e(" Creating your first plugin")];n.render=function(i,e){return r(),a("h1",t,s)};export{n as default};
