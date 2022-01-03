@@ -15,9 +15,11 @@ When setting up the client you added `path.join(__dirname, 'listeners')` so go a
 const {Listener} = require('gcommands');
 
 // Create a new listener listening to the "ready" event
-new Listener('ready', {
+new Listener({
 	// Set the name for the listener
 	name: 'ready',
+	// Set the event to listen to
+	event: 'ready',
 	// The function thats called when the event occurs
 	run: (client) => {
 		return console.log(`Ready! Initialized with ${client.guilds.cache.size} guilds`);
@@ -35,9 +37,11 @@ const {Listener} = require('gcommands');
 // Create a new listener listening to the "ready" event
 new class extends Listener {
 	constructor() {
-		super('ready', {
+		super({
 			// Set the name for the listener
-			name: 'ready'
+			name: 'ready',
+			// Set the event to listen to
+			event: 'ready',
 		});
 	}
 

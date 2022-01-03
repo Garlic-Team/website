@@ -1,6 +1,6 @@
-# What is inhibitors?
+# What are inhibitors?
 
-The inhbitor is used to check/execute a function before starting a command. They are terribly useful because at least you don't have to duplicate code in every command.
+The inhibitor is used to check/execute a function before starting a command. They are terribly useful because at least you don't have to duplicate code in every command.
 
 GCommands already comes with default inhibitors and these are:
 - `ChannelOnly`
@@ -21,7 +21,7 @@ new Command({
     name: 'inhibitor-test',
     inhibitors: [
         new ChannelOnly({
-            options: [ 'channelId', 'channelId 2' ],
+            ids: [ 'channelId', 'channelId 2' ],
             message: 'You can\'t use this command here!'
         })
     ],
