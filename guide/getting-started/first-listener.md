@@ -51,6 +51,8 @@ new class extends Listener {
 :::
 ::::
 
+In this case, you don't define the client in the first place, you define the variable directly. So for example, if you have a `messageCreate` listener, the run function will be something like this: `run: (message) => {}`. discord.js puts a client in each structure, so you just use `message.client` afterwards. In the case of `class`, you can use `this.client` as you do with commands.
+
 This listener listens to the `ready` event. The `ready` event gets emitted when your client becomes ready. After restarting your bot you should see this in your console:
 
 ```sh:no-line-numbers

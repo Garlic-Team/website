@@ -3,6 +3,8 @@
 Remember the path we set when creating the client? Navigate to your `commands` folder, or create it. In that folder
 create a new JS file. You will create your first command there, exited?
 
+GCommands support two ways to create commands. You can use `new Command({ ...settings })` or `new class extends Command`. We'll demonstrate both cases, and we'll discuss the advantages and disadvantages.
+
 :::: code-group
 ::: code-group-item command
 
@@ -48,6 +50,14 @@ new class extends Command {
 
 :::
 ::::
+
+The advantage of the new style is that you have straight typings for the `run` function. In the case of the `class` command, you have to add JSDocs at the run function to have auto-complete. The new style is also cleaner, shorter to type.
+
+You insert normal code into the run function as you would with DJS, except that you use `ctx` instead of `message` or `interaction`.  
+The `ctx` is just a variable that you can rename however you want, or you can import just certain functions using `{ reply, user }` instead of `ctx`.  
+You may find that you don't find some parameters like `author`. Don't despair, just use `user` instead of `author`.  
+
+When you want to define a client, you can use `this.client` in case of class, or just use `ctx.client`.
 
 :::tip 
 Creating commands with new was introduced in GCommands Next with the main purpose of making your code look more

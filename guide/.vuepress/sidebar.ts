@@ -155,6 +155,12 @@ export default {
 			]
 		},
 		{
+			text: 'Inhibitors',
+			children: [
+				'/inhibitors/how-to-use-inhibitors.md'
+			]
+		},
+		{
 			text: 'Plugins',
 			children: [
 				'/plugins/first-plugin.md'

@@ -29,13 +29,15 @@ pnpm add gcommands@next-dev
 :::
 ::::
 
-## Basic client
-
-:::tip 
-It's recommended to use a .env for storing your bots token.
+::: warning
+You need at least Node.js version 16.6.0 to use GCommands.
 :::
 
-Let's get started by creating a new GClient! The GClient is the hub that will be running your bot.
+## Basic client
+
+We start by creating a master file for the bot we're going to run. We'll call it `index.js`.  
+
+Once created, we import [`GClient`](https://garlic-team.js.org/docs/#/docs/gcommands/next/class/GClient) from `gcommands` and initialize it. With this, you will be able to add additional settings for GCommands functionality. [`GClient`](https://garlic-team.js.org/docs/#/docs/gcommands/next/class/GClient) extends the [discord.js client](https://discord.js.org/#/docs/main/stable/class/Client), so you can use all the settings from the [discord.js client](https://discord.js.org/#/docs/main/stable/typedef/ClientOptions) in [`GClient`](https://garlic-team.js.org/docs/#/docs/gcommands/next/class/GClient).
 
 :::: code-group
 ::: code-group-item index.js
@@ -90,10 +92,14 @@ DEV_SERVER=your discord guild id here
 ```
 
 :::
+::::
 
+GCommands also detects mention prefixes if you use message commands. However, we strongly recommend that you only switch to interactions that are constantly improving and bring a better and easier experience to your users.
+
+Don't forget to create `commands`, `components`, `listeners` folders. If you don't want all the folders, just delete the folders you don't want in [GClient#dirs](https://garlic-team.js.org/docs/#/docs/gcommands/next/typedef/GClientOptions)
+
+::: danger
+In any case, do not store the token in `index.js` and preferably not in any `configs.js,ts,json`. Use the [enviroment file](https://dev.to/aadilraza339/what-is-env-file-in-node-js-3h6c). Read more [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token)
 :::
 
 That's it! Try running `node index.js` in your terminal!
-
-
-

@@ -4,6 +4,10 @@
 
 A component is basically a command, but for message components. This makes it easier to handle buttons/context menus.
 
+::: warning
+Only use this when you want to have something like a button roles, giveaway system, ...etc but definitely don't use it when you only want it to be valid for a certain period of time, for the user. Then you can just use [`collectors`](https://discordjs.guide/popular-topics/collectors.html#basic-message-component-collector)
+:::
+
 ## Creating a component
 
 Remember the first command you created? We are going to modify its run function a little, and let it send an awesome button along with the message.
