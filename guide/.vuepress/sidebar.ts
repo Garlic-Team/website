@@ -164,6 +164,7 @@ export default {
 		{
 			text: 'Plugins',
 			children: [
+				'/plugins/how-to-use-plugins.md',
 				'/plugins/first-plugin.md'
 			]
 		},
