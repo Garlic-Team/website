@@ -1,0 +1,1 @@
+const e={key:"v-9c6da778",path:"/gcommands-latest/database/prefix.html",title:"Guild Prefix",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/database/prefix.md",git:{updatedTime:1641240646e3}};export{e as data};
