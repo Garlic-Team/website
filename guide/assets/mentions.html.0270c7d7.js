@@ -1,0 +1,1 @@
+const t={key:"v-03dbca80",path:"/gcommands-latest/other/mentions.html",title:"Mentions",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/other/mentions.md",git:{updatedTime:1641240283e3}};export{t as data};
