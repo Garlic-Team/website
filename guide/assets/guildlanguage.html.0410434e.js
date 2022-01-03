@@ -1,1 +1,0 @@
-const e={key:"v-ecc5cbde",path:"/gcommands-latest/database/guildlanguage.html",title:"Guild Language",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-latest/database/guildlanguage.md",git:{updatedTime:1641233386e3}};export{e as data};
