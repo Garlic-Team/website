@@ -157,7 +157,8 @@ export default {
 		{
 			text: 'Inhibitors',
 			children: [
-				'/inhibitors/how-to-use-inhibitors.md'
+				'/inhibitors/how-to-use-inhibitors.md',
+				'/inhibitors/first-inhibitor.md'
 			]
 		},
 		{

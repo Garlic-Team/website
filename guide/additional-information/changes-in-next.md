@@ -75,7 +75,8 @@ We are adding a completely new system for commands.
 
 ```js
 const { Command, CommandType } = require('gcommands');
-new Command('name', {
+new Command({
+    name: 'omgg',
     description: 'hello',
     type: [ CommandType.SLASH ],
     run: (ctx) => {
@@ -103,7 +104,7 @@ The `name` in options is so that they don't get duplicated and you can have mult
 ```js
 const { Listener } = require('gcommands');
 new Listener('ready', {
-    name: 'botready',
+    name: 'botready', // what????? This is a uniqueId for an event, so you can have more of them and not get replaced.
     run: (client) => {
         console.log(`${client.user.tag} ready!`)
     }
