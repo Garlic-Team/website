@@ -3,24 +3,27 @@
 The inhbitor is used to check/execute a function before starting a command. They are terribly useful because at least you don't have to duplicate code in every command.
 
 GCommands already comes with default inhibitors and these are:
-- `ChannelOnlyInhibitor`
-- `ClientPermissionsInhibitor`
-- `ClientRolesInhibitor`
-- `NsfwInhibitor`
-- `OrInhibitor`
-- `UserOnlyInhibitor`
-- `UserPermissionsInhibitor`
-- `UserRolesInhibitor`
+- `ChannelOnly`
+- `ClientPermissions`
+- `ClientRoles`
+- `Nsfw`
+- `Or`
+- `UserOnly`
+- `UserPermissions`
+- `UserRoles`
 
 Simply import them in the command, and then add them to the `inhibitors` parameter.
 
 ```js
-const { Command, ChannelOnlyInhibitor } = require('gcommands');
+const { Command, Inhibitor: { ChannelOnly } } = require('gcommands');
 
 new Command({
     name: 'inhibitor-test',
     inhibitors: [
-        new ChannelOnlyInhibitor([ 'channelId', 'channelId 2' ])
+        new ChannelOnly({
+            options: [ 'channelId', 'channelId 2' ],
+            message: 'You can\'t use this command here!'
+        })
     ],
     ...other
 })

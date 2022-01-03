@@ -3,13 +3,18 @@
 GCommands supports creating your own inhibitors to use in commands. You just need to create an `inhibitors` folder to put `OwnerOnly.js` in, for example.
 
 ```js
-class OwnerOnlyInhbitor {
-	constructor(ownerIds = null) {
-		this.ownerIds = ownerIds || ['id1', 'id2'];
+const { Inhbitor } = require('gcommands');
+
+class OwnerOnlyInhbitor extends Inhbitor {
+	constructor(options) {
+		super(options);
+
+		this.ownerIds = options.ids || ['id1', 'id2'];
 	}
 
 	run(ctx) {
-		return this.ownerIds.some(userId => userId === ctx.user.id);
+		if (!this.ownerIds.includes(ctx.userId)) return ctx.reply(this.resolveMessage(ctx) || 'You can not use this command');
+		else return true;
 	}
 }
 
