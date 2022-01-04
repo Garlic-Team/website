@@ -1,0 +1,1 @@
+const t={key:"v-d6376f32",path:"/cli/what-is-a-cli.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"cli/what-is-a-cli.md",git:{updatedTime:1641335235e3}};export{t as data};
