@@ -39,14 +39,6 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 				link: '/gcommands-latest/'
 			},
 			{
-				text: 'GEvents',
-				link: '/gevents/',
-			},
-			{
-				text: 'GComponents',
-				link: '/gcomponents/',
-			},
-			{
 				text: 'Hyttpo',
 				link: '/hyttpo/',
 			},
