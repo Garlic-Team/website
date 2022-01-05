@@ -1,1 +1,0 @@
-const i={key:"v-bedc434e",path:"/inhibitors/first-inhibitor.html",title:"Creating your first inhibitor",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"inhibitors/first-inhibitor.md",git:{updatedTime:1641376074e3}};export{i as data};
