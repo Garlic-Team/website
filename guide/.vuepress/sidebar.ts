@@ -11,77 +11,77 @@ export default {
 		{
 			text: 'Getting started',
 			children: [
-				'/gcommands-latest/gettingstarted/installation.md',
-				'/gcommands-latest/gettingstarted/basicbot.md'
+				'/gcommands-legacy/gettingstarted/installation.md',
+				'/gcommands-legacy/gettingstarted/basicbot.md'
 			]
 		},
 		{
 			text: 'Commands',
 			children: [
-				'/gcommands-latest/commands/gettingstarted.md',
-				'/gcommands-latest/commands/first.md',
-				'/gcommands-latest/commands/usingargs.md',
-				'/gcommands-latest/commands/usingsub.md',
-				'/gcommands-latest/commands/usingbuilders.md',
-				'/gcommands-latest/commands/additionalfeatures.md'
+				'/gcommands-legacy/commands/gettingstarted.md',
+				'/gcommands-legacy/commands/first.md',
+				'/gcommands-legacy/commands/usingargs.md',
+				'/gcommands-legacy/commands/usingsub.md',
+				'/gcommands-legacy/commands/usingbuilders.md',
+				'/gcommands-legacy/commands/additionalfeatures.md'
 			]
 		},
 		{
 			text: 'Interactions',
 			children: [
-				'/gcommands-latest/interactions/contextmenus.md'
+				'/gcommands-legacy/interactions/contextmenus.md'
 			]
 		},
 		{
 			text: 'Events',
 			children: [
-				'/gcommands-latest/events/setup.md',
-				'/gcommands-latest/events/create.md',
-				'/gcommands-latest/events/usingbuilder.md',
-				'/gcommands-latest/events/moreevents.md'
+				'/gcommands-legacy/events/setup.md',
+				'/gcommands-legacy/events/create.md',
+				'/gcommands-legacy/events/usingbuilder.md',
+				'/gcommands-legacy/events/moreevents.md'
 			]
 		},
 		{
 			text: 'Components',
 			children: [
-				'/gcommands-latest/components/setup.md',
-				'/gcommands-latest/components/create.md',
+				'/gcommands-legacy/components/setup.md',
+				'/gcommands-legacy/components/create.md',
 			]
 		},
 		{
 			text: 'Database',
 			children: [
-				'/gcommands-latest/database/setup.md',
-				'/gcommands-latest/database/prefix.md',
-				'/gcommands-latest/database/guildlanguage.md'
+				'/gcommands-legacy/database/setup.md',
+				'/gcommands-legacy/database/prefix.md',
+				'/gcommands-legacy/database/guildlanguage.md'
 			]
 		},
 		{
 			text: 'Other',
 			children: [
-				'/gcommands-latest/other/customlanguagefile.md',
-				'/gcommands-latest/other/inhibitor.md',
-				'/gcommands-latest/other/mentions.md',
-				'/gcommands-latest/other/alwaysobtain.md'
+				'/gcommands-legacy/other/customlanguagefile.md',
+				'/gcommands-legacy/other/inhibitor.md',
+				'/gcommands-legacy/other/mentions.md',
+				'/gcommands-legacy/other/alwaysobtain.md'
 			]
 		},
 		{
 			text: 'Common questions',
 			children: [
-				'/gcommands-latest/questions/commandrunoptions.md',
-				'/gcommands-latest/questions/guildundefined.md',
-				'/gcommands-latest/questions/missingacces.md'
+				'/gcommands-legacy/questions/commandrunoptions.md',
+				'/gcommands-legacy/questions/guildundefined.md',
+				'/gcommands-legacy/questions/missingacces.md'
 			]
 		},
 		{
 			text: 'Additionals',
 			children: [
-				'/gcommands-latest/additional/fromv7tov8.md',
-				'/gcommands-latest/additional/fromv6tov7.md',
-				'/gcommands-latest/additional/fromv5tov6.md',
-				'/gcommands-latest/additional/fromv4tov5.md',
-				'/gcommands-latest/additional/fromv3tov4.md',
-				'/gcommands-latest/additional/fromv2tov3.md'
+				'/gcommands-legacy/additional/fromv7tov8.md',
+				'/gcommands-legacy/additional/fromv6tov7.md',
+				'/gcommands-legacy/additional/fromv5tov6.md',
+				'/gcommands-legacy/additional/fromv4tov5.md',
+				'/gcommands-legacy/additional/fromv3tov4.md',
+				'/gcommands-legacy/additional/fromv2tov3.md'
 			]
 		}
 	],
