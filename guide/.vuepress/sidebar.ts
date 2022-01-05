@@ -155,6 +155,12 @@ export default {
 			]
 		},
 		{
+			text: 'CLI',
+			children: [
+				'/cli/how-to-use-cli.md'
+			]
+		},
+		{
 			text: 'Inhibitors',
 			children: [
 				'/inhibitors/how-to-use-inhibitors.md',
