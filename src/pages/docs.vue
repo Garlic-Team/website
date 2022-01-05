@@ -22,8 +22,6 @@ import { whenever, useEventListener, useMagicKeys } from '@vueuse/core';
 import { useStore } from '~/store';
 import MainSource from '~/data/MainSource';
 import HyttpoSource from '~/data/HyttpoSource';
-import GEventsSource from '~/data/GEventsSource';
-import GComponentsSource from '~/data/GComponentsSource';
 import { fetchError } from '~/util/fetchError';
 
 import Sidebar from '~/components/Sidebar.vue';
@@ -44,8 +42,6 @@ const { Ctrl_K } = useMagicKeys({
 
 const sources = reactive({
 	[MainSource.id]: MainSource,
-	[GEventsSource.id]: GEventsSource,
-	[GComponentsSource.id]: GComponentsSource,
 	[HyttpoSource.id]: HyttpoSource,
 });
 

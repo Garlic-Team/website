@@ -4,8 +4,6 @@ import { createStore, useStore as baseUseStore, Store } from 'vuex';
 import DocsSource from './data/DocsSource';
 import MainSource from './data/MainSource';
 import HyttpoSource from '~/data/HyttpoSource';
-import GEventsSource from '~/data/GEventsSource';
-import GComponentsSource from '~/data/GComponentsSource';
 
 import { Documentation, DocumentationCustomFile } from './interfaces/Documentation';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
@@ -34,8 +32,6 @@ export const store = createStore<State>({
 	state: {
 		sources: [
 			{ source: MainSource, name: MainSource.name, id: MainSource.id },
-			{ source: GEventsSource, name: GEventsSource.name, id: GEventsSource.id },
-			{ source: GComponentsSource, name: GComponentsSource.name, id: GComponentsSource.id },
 			{ source: HyttpoSource, name: HyttpoSource.name, id: HyttpoSource.id },
 		],
 		source: MainSource,
