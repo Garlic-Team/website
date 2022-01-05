@@ -1,1 +1,0 @@
-const e={key:"v-65203061",path:"/plugins/first-plugin.html",title:"Creating your first plugin",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:3,title:"Package",slug:"package",children:[]},{level:3,title:"Folder",slug:"folder",children:[]}],filePathRelative:"plugins/first-plugin.md",git:{updatedTime:1641374691e3}};export{e as data};
