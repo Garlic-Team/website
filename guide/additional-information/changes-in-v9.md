@@ -1,4 +1,4 @@
-# Upgrading from legacy to next
+# Upgrading from legacy to v9 (next gcommands)
 
 ## Before you start
 
@@ -9,17 +9,20 @@ Remember that GCommands runs on discord.js, so make sure you have the latest ver
 :::: code-group
 ::: code-group-item npm
 ```sh:no-line-numbers
-npm install gcommands@next-dev
+npm install gcommands
+npm install gcommands@next # for unstable, development next version
 ```
 :::
 ::: code-group-item yarn
 ```sh:no-line-numbers
-yarn add gcommands@next-dev
+yarn add gcommands
+yarn add gcommands@next # for unstable, development next version
 ```
 :::
 ::: code-group-item pnpm
 ```sh:no-line-numbers
-pnpm add gcommands@next-dev
+pnpm add gcommands
+yarn add gcommands@next # for unstable, development next version
 ```
 :::
 ::::
@@ -91,8 +94,12 @@ new Command({
 ### CommandOptions#type
 As mentioned above, we have deleted the properties in the client, and added them purely to the commands. It now uses an array with types, rather than `'slash': 'something', 'context': 'something'`
 
-### CommandOptions#arguments
+### CommandOptions#arguments | CommandOptions#arrayArgs | CommandOptions#objectArgs
 ^ renamed from `args` to `arguments`
+
+arrayArgs and objectArgs have been completely deleted. For better typings we recommend to use `arguments.getString()` and similar functions which can be found [here](https://discord.js.org/#/docs/main/stable/class/CommandInteractionOptionResolver)  
+  
+However, if you would like to use arrayArgs too much, you can use `ctx.arguments.options[0].value`
 
 ## Listeners
 ^ renamed from Events to Listeners  

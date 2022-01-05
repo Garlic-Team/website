@@ -1,5 +1,5 @@
 export default {
-	'/gcommands-latest/': [
+	'/gcommands-legacy/': [
 		{
 			text: 'Home',
 			children: [
@@ -177,7 +177,7 @@ export default {
 		{
 			text: 'Additional Information',
 			children: [
-				'/additional-information/changes-in-next.md'
+				'/additional-information/changes-in-v9.md'
 			]
 		}
 	],
