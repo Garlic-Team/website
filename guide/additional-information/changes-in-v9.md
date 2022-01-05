@@ -76,6 +76,9 @@ messagePrefix: '!'
 ## Commands
 We are adding a completely new system for commands.
 
+You can name the `ctx` variable whatever you want, and feel free to import just some functions like this: `{ user }`.  
+If you want to know what all is in the CommandContext i.e. `ctx`, have a look [here](https://garlic-team.js.org/docs/#/docs/gcommands/next/class/CommandContext)
+
 ```js
 const { Command, CommandType } = require('gcommands');
 new Command({
@@ -110,7 +113,8 @@ The `name` in options is so that they don't get duplicated and you can have mult
 
 ```js
 const { Listener } = require('gcommands');
-new Listener('ready', {
+new Listener({
+    event: 'ready' // event for listening
     name: 'botready', // what????? This is a uniqueId for an event, so you can have more of them and not get replaced.
     run: (client) => {
         console.log(`${client.user.tag} ready!`)
