@@ -1,0 +1,1 @@
+const e={key:"v-0a31678c",path:"/hyttpo/other/methods.html",title:"Methods",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Example code",slug:"example-code",children:[]},{level:2,title:"Learn",slug:"learn",children:[]}],filePathRelative:"hyttpo/other/methods.md",git:{updatedTime:1641506479e3}};export{e as data};
