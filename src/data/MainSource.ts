@@ -2,7 +2,7 @@ import semver from 'semver';
 
 import DocsSource from './DocsSource';
 
-const branchBlacklist = new Set(['docs', 'webpack', 'v8', 'master']);
+const branchBlacklist = new Set(['docs', 'webpack', 'v8', 'master', 'renovate']);
 export default new DocsSource({
 	id: 'gcommands',
 	name: 'GCommands',
