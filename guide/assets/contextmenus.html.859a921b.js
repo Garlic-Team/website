@@ -1,1 +1,0 @@
-const e={key:"v-12b8ba16",path:"/gcommands-legacy/interactions/contextmenus.html",title:"Context Menus",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/interactions/contextmenus.md",git:{updatedTime:1641506479e3}};export{e as data};

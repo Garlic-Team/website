@@ -1,0 +1,1 @@
+const t={key:"v-90166de0",path:"/plugins/plugin-with-options.html",title:"Creating a plugin with options",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"plugins/plugin-with-options.md",git:{updatedTime:1641507217e3}};export{t as data};
