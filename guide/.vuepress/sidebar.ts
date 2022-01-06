@@ -85,26 +85,6 @@ export default {
 			]
 		}
 	],
-	'/gevents/': [
-		{
-			text: 'Home',
-			children: [
-				'/',
-				'/requesting-more-content.md',
-				'/whats-new.md',
-			],
-		}
-	],
-	'/gcomponents/': [
-		{
-			text: 'Home',
-			children: [
-				'/',
-				'/requesting-more-content.md',
-				'/whats-new.md',
-			],
-		}
-	],
 	'/hyttpo/': [
 		{
 			text: 'Home',
@@ -157,7 +137,8 @@ export default {
 		{
 			text: 'CLI',
 			children: [
-				'/cli/how-to-use-cli.md'
+				'/cli/how-to-use-cli.md',
+				'/cli/generate-component.md'
 			]
 		},
 		{

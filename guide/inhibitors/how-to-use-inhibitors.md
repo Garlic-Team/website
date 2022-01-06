@@ -22,7 +22,8 @@ new Command({
     inhibitors: [
         new ChannelOnly({
             ids: [ 'channelId', 'channelId 2' ],
-            message: 'You can\'t use this command here!'
+            message: 'You can\'t use this command here!',
+            ephemeral: true
         })
     ],
     ...other
@@ -30,5 +31,28 @@ new Command({
 ```
 
 You may be saying to yourself, what is `OrInhibitor` for. You can put 2 inhibitors in there, for example UserOnly and ChannelOnly and as long as one of those inhibitors is satisfied, the code will continue.
+
+```js
+const { Command, Inhibitor: { ChannelOnly, UserOnly, Or } } = require('gcommands');
+
+new Command({
+    name: 'inhibitor-test',
+    inhibitors: [
+        new Or({
+            ihnhibitors: [
+                new ChannelOnly({
+                    ids: [ 'channelId', 'channelId 2' ]
+                }),
+                new UserOnly({
+                    ids: [ 'userId', 'userId 2' ]
+                })
+            ],
+            message: 'You can\'t use this command here!',
+            ephemeral: true
+        })
+    ],
+    ...other
+})
+```
 
 You put something different in each inhibitor. See [documentation](https://garlic-team.js.org/docs/#/docs/gcommands/next/general/welcome) for more information.
