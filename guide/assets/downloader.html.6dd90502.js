@@ -1,1 +1,0 @@
-const e={key:"v-9c11d1f8",path:"/hyttpo/examples/downloader.html",title:"Downloader",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"hyttpo/examples/downloader.md",git:{updatedTime:1641548458e3}};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-62457273",path:"/gcommands-legacy/components/create.html",title:"Creating a component",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Resulting code",slug:"resulting-code",children:[]}],filePathRelative:"gcommands-legacy/components/create.md",git:{updatedTime:1641548603e3}};export{e as data};
