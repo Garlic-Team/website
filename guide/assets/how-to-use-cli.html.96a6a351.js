@@ -1,1 +1,0 @@
-const e={key:"v-44201568",path:"/cli/how-to-use-cli.html",title:"What is a CLI?",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Create a project",slug:"create-a-project",children:[]},{level:2,title:"Existing project",slug:"existing-project",children:[]}],filePathRelative:"cli/how-to-use-cli.md",git:{updatedTime:1641507217e3}};export{e as data};
