@@ -9,7 +9,7 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	templateSSR: path.join(__dirname, 'templates', 'index.ssr.html'),
 	lang: 'en-US',
 	base: '/guide/',
-	title: 'GCommands Next',
+	title: 'GCommands',
 	description: 'We love open-source <3 ',
 	head: [
 		['meta', { charset: 'utf-8' }],
@@ -35,16 +35,8 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 		lastUpdated: true,
 		navbar: [
 			{
-				text: 'GCommands Latest',
-				link: '/gcommands-latest/'
-			},
-			{
-				text: 'GEvents',
-				link: '/gevents/',
-			},
-			{
-				text: 'GComponents',
-				link: '/gcomponents/',
+				text: 'GCommands Legacy',
+				link: '/gcommands-legacy/'
 			},
 			{
 				text: 'Hyttpo',

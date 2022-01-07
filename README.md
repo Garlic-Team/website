@@ -1,4 +1,19 @@
-# Garlic Team Guide
+<div align="center">
+    
+   # Garlic Team Guide
+    
+  <br />
+  <p>
+    <img src="https://discord.com/api/guilds/833628077556367411/embed.png?style=banner2"></img>
+  </p>
+  <p>
+    <a href="https://ko-fi.com/H2H05FNRL"><img src="https://img.shields.io/badge/Kofi-Donate-yellow?style=for-the-badge" height="30" /></a>
+    <a href="https://github.com/Garlic-Team/website"><img src="https://img.shields.io/badge/Open-Source-blue?style=for-the-badge" height="30" /></a>
+    <img src="https://img.shields.io/badge/Made%20With-TypeScript-red?style=for-the-badge" height="30" />
+  </p>
+</div>
+
+---
 
 ## About
 

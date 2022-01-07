@@ -7,25 +7,22 @@ verify your installation with `node -v` in your terminal.
 
 :::: code-group
 ::: code-group-item npm
-
 ```sh:no-line-numbers
-npm install gcommands@next-dev
+npm install gcommands
+npm install gcommands@next # for unstable, development next version
 ```
-
 :::
 ::: code-group-item yarn
-
 ```sh:no-line-numbers
-yarn add gcommands@next-dev
+yarn add gcommands
+yarn add gcommands@next # for unstable, development next version
 ```
-
 :::
 ::: code-group-item pnpm
-
 ```sh:no-line-numbers
-pnpm add gcommands@next-dev
+pnpm add gcommands
+yarn add gcommands@next # for unstable, development next version
 ```
-
 :::
 ::::
 
