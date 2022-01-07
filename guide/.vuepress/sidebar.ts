@@ -159,7 +159,7 @@ export default {
 		{
 			text: 'Databases',
 			children: [
-				'./databases/prisma.md'
+				'/databases/prisma.md'
 			]
 		},
 		{
