@@ -12,7 +12,7 @@ When setting up the client you added `path.join(__dirname, 'listeners')` so go a
 ::: code-group-item listener
 
 ```js
-const {Listener} = require('gcommands');
+const { Listener } = require('gcommands');
 
 // Create a new listener listening to the "ready" event
 new Listener({
@@ -29,10 +29,10 @@ new Listener({
 ```
 
 :::
-::: code-group-item class listener
+::: code-group-item class extends
 
 ```js
-const {Listener} = require('gcommands');
+const { Listener } = require('gcommands');
 
 // Create a new listener listening to the "ready" event
 new class extends Listener {

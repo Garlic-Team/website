@@ -6,3 +6,13 @@ Among the components are governed by:
 - Listeners
 - Inhbitors
 - Providers
+
+```bash
+$ gcommands generate
+
+√ What's the name of your component? ... hello
+√ Select a type for your component » Command template
+√ What's the description of your command? ... Say hello
+√ Select a types for your command » Slash Command, Message Command
+√ Downloading the command
+```

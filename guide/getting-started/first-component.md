@@ -28,7 +28,8 @@ return ctx.reply({ content: `Hello ${ctx.username}!`, components: [row] });
 Make sure to add the import statements for `MessageActionRow`, `MessageButton` and `CustomId` at the top of the file.
 
 ```js
-const { ...other, MessageActionRow, MessageButton, CustomId} = require('gcommands');
+const { MessageActionRow, MessageButton } = require('discord.js');
+const { CustomId } = require('gcommands');
 
 // Other code
 ```
@@ -59,13 +60,13 @@ Now open or create the `components` folder and create a new file in it.
 ::: code-group-item component
 
 ```js
-const {Component, ComponentType} = require('gcommands');
+const { Component, ComponentType } = require('gcommands');
 
 // Create a new component with the name "hello", this name is the first argument of CustomId: CustomId('hello')
 new Component({
 	name: 'hello',
 	// Set the type of the component
-	type: [ComponentType.BUTTON],
+	type: [ ComponentType.BUTTON ],
 	// The function thats called when the button is pressed
 	run: (ctx) => {
 		return ctx.reply(`Hello again ${ctx.username}!`);
@@ -77,7 +78,7 @@ new Component({
 ::: code-group-item class component
 
 ```js
-const {Component, ComponentType} = require('gcommands');
+const { Component, ComponentType } = require('gcommands');
 
 // Create a new component with the name "hello", this name is the first argument of CustomId: CustomId('hello')
 new class extends Component {
@@ -85,7 +86,7 @@ new class extends Component {
 		super({
 			name: 'hello',
 			// Set the type of the component
-			type: [ComponentType.BUTTON],
+			type: [ ComponentType.BUTTON ],
 		});
 	}
 

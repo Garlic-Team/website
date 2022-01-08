@@ -47,3 +47,26 @@ export default (options: MyOptions) => {
 ::::
 
 In the case of plugins, I prefer typescript because you can more easily have typings as well.
+
+## Usage Example
+
+:::: code-group
+::: code-group-item JS
+```js
+const plugin = require('gcommands-plugin-with-options');
+
+plugin({
+    pluginKey: 'test'
+})
+```
+:::
+::: code-group-item TS
+```js
+import plugin from 'gcommands-plugin-with-options';
+
+plugin({
+    pluginKey: 'test'
+})
+```
+:::
+::::
