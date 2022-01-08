@@ -157,6 +157,12 @@ export default {
 			]
 		},
 		{
+			text: 'Databases',
+			children: [
+				'/databases/prisma.md'
+			]
+		},
+		{
 			text: 'Additional Information',
 			children: [
 				'/additional-information/changes-in-v9.md'
