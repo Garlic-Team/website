@@ -38,7 +38,7 @@ It is possible that `gc` will not work, so we also made a long version of `gcomm
 
 So once you have cli installed and you want to create a project, there is nothing easier than to open the folder in which you want the project to be created and you use:
 ```bash
-gcommands new
+$ gcommands new
 
 √ What's the name of your project? ... myfirstbot
 √ Select a language for your project » JavaScript

@@ -25,7 +25,7 @@ new Command({
 ```
 
 :::
-::: code-group-item class command
+::: code-group-item class extends
 
 ```js
 const { Command, CommandType } = require('gcommands');
@@ -51,9 +51,9 @@ new class extends Command {
 :::
 ::::
 
-The advantage of the new style is that you have straight typings for the `run` function. In the case of the `class` command, you have to add JSDocs at the run function to have auto-complete. The new style is also cleaner, shorter to type.
+The advantage of the new style is that you have straight typings for the `run` function. In the case of the `class` command, you have to add jsdocs at the run function to have auto-complete. The new style is also cleaner, shorter to type.
 
-You insert normal code into the run function as you would with DJS, except that you use `ctx` instead of `message` or `interaction`.  
+You insert normal code into the run function as you would with [discord.js](https://discord.js.org), except that you use `ctx` instead of `message` or `interaction`.  
 The `ctx` is just a variable that you can rename however you want, or you can import just certain functions using `{ reply, user }` instead of `ctx`.  
 You may find that you don't find some parameters like `author`. Don't despair, just use `user` instead of `author`.  
 
