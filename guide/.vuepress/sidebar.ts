@@ -129,9 +129,16 @@ export default {
 			text: 'Getting started',
 			children: [
 				'/getting-started/',
-				'/getting-started/first-command.md',
+				'/commands/first-command.md',
 				'/getting-started/first-component.md',
 				'/getting-started/first-listener.md'
+			]
+		},
+		{
+			text: 'Commands',
+			children: [
+				'/commands/first-command.md',
+				'/commands/arguments.md'
 			]
 		},
 		{

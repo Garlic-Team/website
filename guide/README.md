@@ -2,10 +2,6 @@
 
 ![BANNER](./images/branding/banner.png)
 
-:::danger
-GCommands Next is a open beta
-:::
-
 If you're reading this, it probably means you want to learn how to make a bot with GCommands Next. Awesome! You've come
 to the right place. This guide will teach you things such as:
 
