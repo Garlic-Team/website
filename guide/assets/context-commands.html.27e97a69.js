@@ -1,0 +1,1 @@
+import{o as a,c as e,a as n,d as r}from"./app.e7acc00b.js";const t={},o={id:"creating-your-context-menu-command",tabindex:"-1"},c=[n("a",{class:"header-anchor",href:"#creating-your-context-menu-command","aria-hidden":"true"},"#",-1),r(" Creating your context menu command")];t.render=function(n,r){return a(),e("h1",o,c)};export{t as default};
