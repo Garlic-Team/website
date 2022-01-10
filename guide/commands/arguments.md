@@ -142,14 +142,14 @@ new Command({
     ],
     run: (ctx) => {
         // Now let's detect what sub command was used.
-        const sub = ctx.getSubcommand();
+        const sub = ctx.arguments.getSubcommand();
 
         if (sub === 'add') {
             // add code
         } else if (sub === 'remove') {
             // remove code
         } else  {
-            const user = ctx.getMember('user');
+            const user = ctx.arguments.getMember('user');
 
             // Why safeReply? We have `autoDefer` in the command, if by chance there is a problem with the database, so that the command doesn't fail and the discord doesn't throw "Interaction failed".
             // This will allow your command to last a bit longer, and then the reply will automatically modify itself. So `safeReply` is a function of `reply` and `editReply`.
@@ -254,10 +254,10 @@ new Command({
     ],
     run: async(ctx) => {
         // Now let's detect what sub command group was used.
-        const subgroup = ctx.getSubcommandGroup();
-        const sub = ctx.getSubcommand();
+        const subgroup = ctx.arguments.getSubcommandGroup();
+        const sub = ctx.arguments.getSubcommand();
 
-        const role = ctx.getRole('role');
+        const role = ctx.arguments.getRole('role');
 
         if (subgroup === 'mass') {
             if (sub === 'add') {
@@ -288,7 +288,7 @@ new Command({
                 })
             }
         } else {
-            const member = ctx.getMember('user');
+            const member = ctx.arguments.getMember('user');
 
             if (sub === 'add') {
                 // Add role to user
