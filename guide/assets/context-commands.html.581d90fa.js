@@ -1,0 +1,1 @@
+const t={key:"v-433884a5",path:"/commands/context-commands.html",title:"Creating your context menu command",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"commands/context-commands.md",git:{updatedTime:1641840901e3}};export{t as data};
