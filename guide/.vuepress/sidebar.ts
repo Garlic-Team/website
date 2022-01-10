@@ -138,7 +138,8 @@ export default {
 			text: 'Commands',
 			children: [
 				'/commands/first-command.md',
-				'/commands/arguments.md'
+				'/commands/arguments.md',
+				'/commands/context-commands.md'
 			]
 		},
 		{

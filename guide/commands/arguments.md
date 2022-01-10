@@ -149,7 +149,7 @@ new Command({
         } else if (sub === 'remove') {
             // remove code
         } else  {
-            const user = ctx.getMember(user);
+            const user = ctx.getMember('user');
 
             // Why safeReply? We have `autoDefer` in the command, if by chance there is a problem with the database, so that the command doesn't fail and the discord doesn't throw "Interaction failed".
             // This will allow your command to last a bit longer, and then the reply will automatically modify itself. So `safeReply` is a function of `reply` and `editReply`.
@@ -260,8 +260,6 @@ new Command({
         const role = ctx.getRole('role');
 
         if (subgroup === 'mass') {
-            
-
             if (sub === 'add') {
                 // Add role (everyone)
                 let members = (await ctx.guild.members.fetch());
