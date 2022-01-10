@@ -1,1 +1,0 @@
-const e={key:"v-13390c7c",path:"/gcommands-legacy/other/mentions.html",title:"Mentions",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/other/mentions.md",git:{updatedTime:1641731507e3}};export{e as data};
