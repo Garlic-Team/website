@@ -9,7 +9,7 @@ export default new DocsSource({
 	global: 'GCommands',
 	repo: 'Garlic-Team/GCommands',
 	docsFolder: '/docs',
-	defaultTag: 'latest',
+	defaultTag: 'next',
 	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
 	tagFilter: (tag: string) => semver.gte(tag.replace(/^v/, ''), '9.0.0'),
 });
