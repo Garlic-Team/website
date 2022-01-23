@@ -143,17 +143,11 @@ export default {
 			]
 		},
 		{
-			text: 'CLI',
-			children: [
-				'/cli/how-to-use-cli.md',
-				'/cli/generate-component.md'
-			]
-		},
-		{
 			text: 'Inhibitors',
 			children: [
 				'/inhibitors/how-to-use-inhibitors.md',
-				'/inhibitors/first-inhibitor.md'
+				'/inhibitors/first-inhibitor.md',
+				'/inhibitors/advanced-usage.md'
 			]
 		},
 		{
@@ -168,6 +162,13 @@ export default {
 			text: 'Databases',
 			children: [
 				'/databases/prisma.md'
+			]
+		},
+		{
+			text: 'CLI',
+			children: [
+				'/cli/how-to-use-cli.md',
+				'/cli/generate-component.md'
 			]
 		},
 		{
