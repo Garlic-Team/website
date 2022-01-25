@@ -299,9 +299,9 @@ new Command({
 
             if (sub === 'add') {
                 // Add role to user
-				if (member.roles.cache.has(role.id)) {
+		if (member.roles.cache.has(role.id)) {
                     ctx.reply({
-                        content: 'You have this role!',
+                        content: 'You already have this role!',
                         ephemeral: true,
                     })
                     return;
@@ -320,7 +320,14 @@ new Command({
                         })
                     });
             } else {
-                // Remove role from user
+               // Remove role from user
+                 if (!member.roles.cache.has(role.id)) {
+                    ctx.reply({
+                        content: 'You already haven't this role!',
+                        ephemeral: true,
+                    })
+                    return;
+                }
                 member.roles.remove(role)
                     .then(() => {
                         ctx.reply({
