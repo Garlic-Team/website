@@ -1,0 +1,1 @@
+const t={key:"v-0618a3bc",path:"/inhibitors/how-to-use-inhibitors.html",title:"What are inhibitors?",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"inhibitors/how-to-use-inhibitors.md",git:{updatedTime:164313535e4}};export{t as data};
