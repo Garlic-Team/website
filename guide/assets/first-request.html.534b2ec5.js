@@ -1,1 +1,0 @@
-const t={key:"v-0ab59ab8",path:"/hyttpo/getting-started/first-request.html",title:"Sending your first request",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"hyttpo/getting-started/first-request.md",git:{updatedTime:1643138068e3}};export{t as data};

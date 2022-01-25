@@ -1,1 +1,0 @@
-const e={key:"v-2ac3fbcf",path:"/gcommands-legacy/",title:"Introduction",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Before you begin...",slug:"before-you-begin",children:[]}],filePathRelative:"gcommands-legacy/README.md",git:{updatedTime:1643138068e3}};export{e as data};
