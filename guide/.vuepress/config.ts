@@ -14,6 +14,7 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	head: [
 		['meta', { charset: 'utf-8' }],
 		['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+		['meta', { name: 'keywords', content: 'JavaScript, JS, TypeScript, TS, framework, addon, library, discord, discord.js, api, discord.js framework, djs, djs framework' }],
 		['link', { rel: 'icon', href: '/icon.gif' }],
 		['meta', { name: 'theme-color', content: '#3eaf7c' }],
 		['meta', { name: 'twitter:card', content: 'summary' }],
