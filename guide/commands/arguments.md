@@ -214,47 +214,47 @@ new Command({
             ]
         }),
     	new Argument({
-      		name: "single",
-      		description: "Role for single user",
+      		name: 'single',
+      		description: 'Role for single user',
       		type: ArgumentType.SUB_COMMAND_GROUP,
       		options: [
         		new Argument({
-          			name: "add",
-          			description: "Add role for user",
+          			name: 'add',
+          			description: 'Add role for user',
           			type: ArgumentType.SUB_COMMAND,
           			options: [
             			new Argument({
-              				name: "role",
-              				description: "Select role",
+              				name: 'role',
+              				description: 'Select role',
               				type: ArgumentType.ROLE,
               				required: true,
             			}),
            				new Argument({
-              				name: "user",
-              				description: "Select user",
+              				name: 'user',
+              				description: 'Select user',
               				type: ArgumentType.USER,
               				required: true,
             			})
           			]
         		}),
         		new Argument({
-         			name: "remove",
-          			description: "Remove role from user",
+         			name: 'remove',
+          			description: 'Remove role from user',
           			type: ArgumentType.SUB_COMMAND,
           			options: [
             			new Argument({
-              				name: "role",
-              				description: "Select role",
+              				name: 'role',
+              				description: 'Select role',
               				type: ArgumentType.ROLE,
               				required: true,
             			}),
             			new Argument({
-              				name: "user",
-              				description: "Select user",
+              				name: 'user',
+              				description: 'Select user',
               				type: ArgumentType.USER,
               				required: true,
             			})
-          			]
+          		    ]
         		})
       		]
     })
