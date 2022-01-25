@@ -67,12 +67,12 @@ clean! You can use the method your prefer.
 Restart your bot, and you should see the `hello` slash command pop-up in your dev-server. Go ahead and give it a try!
 
 <DiscordMessages>
-	<DiscordMessage profile="bot">
+	<DiscordMessage profile='bot'>
 		<template #interactions>
 			<DiscordInteraction
-				profile="user"
-				author="GCommands"
-				:command="true"
+				profile='user'
+				author='GCommands'
+				:command='true'
 			>hello</DiscordInteraction>
 		</template>
 		Hello S222em!
@@ -82,10 +82,10 @@ Restart your bot, and you should see the `hello` slash command pop-up in your de
 You can also use the message command
 
 <DiscordMessages>
-	<DiscordMessage profile="user">
+	<DiscordMessage profile='user'>
 		.hello
 	</DiscordMessage>
-	<DiscordMessage profile="bot">
+	<DiscordMessage profile='bot'>
 		Hello S222em!
 	</DiscordMessage>
 </DiscordMessages>

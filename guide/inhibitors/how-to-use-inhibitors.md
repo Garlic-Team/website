@@ -19,14 +19,14 @@ Simply import them in the command, and then add them to the `inhibitors` paramet
 const {
 	Command,
 	Inhibitor: { ChannelOnly },
-} = require("gcommands");
+} = require('gcommands');
 
 new Command({
-	name: "inhibitor-test",
+	name: 'inhibitor-test',
 	inhibitors: [
 		new ChannelOnly({
-			ids: ["channelId", "channelId 2"],
-			message: "You can't use this command here!",
+			ids: ['channelId', 'channelId 2'],
+			message: 'You can\'t use this command here!',
 			ephemeral: true,
 		}),
 	],
@@ -40,21 +40,21 @@ You may be saying to yourself, what is `OrInhibitor` for. You can put 2 inhibito
 const {
 	Command,
 	Inhibitor: { ChannelOnly, UserOnly, Or },
-} = require("gcommands");
+} = require('gcommands');
 
 new Command({
-	name: "inhibitor-test",
+	name: 'inhibitor-test',
 	inhibitors: [
 		new Or({
 			inhibitors: [
 				new ChannelOnly({
-					ids: ["channelId", "channelId 2"],
+					ids: ['channelId', 'channelId 2'],
 				}),
 				new UserOnly({
-					ids: ["userId", "userId 2"],
+					ids: ['userId', 'userId 2'],
 				}),
 			],
-			message: "You can't use this command here!",
+			message: 'You can\'t use this command here!',
 			ephemeral: true,
 		}),
 	],
