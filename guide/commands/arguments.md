@@ -323,7 +323,7 @@ new Command({
                // Remove role from user
                  if (!member.roles.cache.has(role.id)) {
                     ctx.reply({
-                        content: 'You don\ 't have this role!',
+                        content: 'You don\'t have this role!',
                         ephemeral: true,
                     })
                     return;
