@@ -313,17 +313,17 @@ new Command({
                             ephemeral: true,
                         })
                     })
-                    .catch(e => {
-                        ctx.reply({
-                            content: e,
-                            ephemeral: true,
-                        })
-                    });
+                .catch(e => {
+                    ctx.reply({
+                        content: e,
+                        ephemeral: true,
+                    })
+                });
             } else {
                // Remove role from user
                  if (!member.roles.cache.has(role.id)) {
                     ctx.reply({
-                        content: 'You don't have this role!',
+                        content: 'You don\ 't have this role!',
                         ephemeral: true,
                     })
                     return;
@@ -333,14 +333,14 @@ new Command({
                         ctx.reply({
                             content: 'Removed!',
                             ephemeral: true,
-                        })
                     })
-                    .catch(e => {
-                        ctx.reply({
-                            content: e,
-                            ephemeral: true,
-                        })
-                    });
+                })
+                .catch(e => {
+                    ctx.reply({
+                        content: e,
+                        ephemeral: true,
+                    })
+                });
             }
         }
     }
