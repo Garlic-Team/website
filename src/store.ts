@@ -294,7 +294,7 @@ export const store = createStore<State>({
 				Exclude: 'https://www.typescriptlang.org/docs/handbook/utility-types.html#excludetype-excludedunion',
 				Omit: 'https://www.typescriptlang.org/docs/handbook/utility-types.html#omittype-keys',
 				IterableIterator: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols',
-				
+
 				// Discord.js
 				Activity: 'https://discord.js.org/#/docs/main/stable/class/Activity',
 				ActivityFlags: 'https://discord.js.org/#/docs/main/stable/class/ActivityFlags',
@@ -302,7 +302,8 @@ export const store = createStore<State>({
 				Application: 'https://discord.js.org/#/docs/main/stable/class/Application',
 				ApplicationCommand: 'https://discord.js.org/#/docs/main/stable/class/ApplicationCommand',
 				ApplicationCommandManager: 'https://discord.js.org/#/docs/main/stable/class/ApplicationCommandManager',
-				ApplicationCommandPermissionsManager: 'https://discord.js.org/#/docs/main/stable/class/ApplicationCommandPermissionsManager',
+				ApplicationCommandPermissionsManager:
+					'https://discord.js.org/#/docs/main/stable/class/ApplicationCommandPermissionsManager',
 				ApplicationFlags: 'https://discord.js.org/#/docs/main/stable/class/ApplicationFlags',
 				AutocompleteInteraction: 'https://discord.js.org/#/docs/main/stable/class/AutocompleteInteraction',
 				Base: 'https://discord.js.org/#/docs/main/stable/class/Base',
@@ -328,7 +329,8 @@ export const store = createStore<State>({
 				ClientVoiceManager: 'https://discord.js.org/#/docs/main/stable/class/ClientVoiceManager',
 				Collector: 'https://discord.js.org/#/docs/main/stable/class/Collector',
 				CommandInteraction: 'https://discord.js.org/#/docs/main/stable/class/CommandInteraction',
-				CommandInteractionOptionResolver: 'https://discord.js.org/#/docs/main/stable/class/CommandInteractionOptionResolver',
+				CommandInteractionOptionResolver:
+					'https://discord.js.org/#/docs/main/stable/class/CommandInteractionOptionResolver',
 				ContextMenuInteraction: 'https://discord.js.org/#/docs/main/stable/class/ContextMenuInteraction',
 				DataManager: 'https://discord.js.org/#/docs/main/stable/class/DataManager',
 				DiscordAPIError: 'https://discord.js.org/#/docs/main/stable/class/DiscordAPIError',
@@ -336,7 +338,8 @@ export const store = createStore<State>({
 				Emoji: 'https://discord.js.org/#/docs/main/stable/class/Emoji',
 				Formatters: 'https://discord.js.org/#/docs/main/stable/class/Formatters',
 				Guild: 'https://discord.js.org/#/docs/main/stable/class/Guild',
-				GuildApplicationCommandManager: 'https://discord.js.org/#/docs/main/stable/class/GuildApplicationCommandManager',
+				GuildApplicationCommandManager:
+					'https://discord.js.org/#/docs/main/stable/class/GuildApplicationCommandManager',
 				GuildAuditLogs: 'https://discord.js.org/#/docs/main/stable/class/GuildAuditLogs',
 				GuildAuditLogsEntry: 'https://discord.js.org/#/docs/main/stable/class/GuildAuditLogsEntry',
 				GuildBan: 'https://discord.js.org/#/docs/main/stable/class/GuildBan',
@@ -440,7 +443,8 @@ export const store = createStore<State>({
 				ActivityPlatform: 'https://discord.js.org/#/docs/main/stable/typedef/ActivityPlatform',
 				ActivityTimestamps: 'https://discord.js.org/#/docs/main/stable/typedef/ActivityTimestamps',
 				ActivityType: 'https://discord.js.org/#/docs/main/stable/typedef/ActivityType',
-				AddApplicationCommandPermissionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/AddApplicationCommandPermissionsOptions',
+				AddApplicationCommandPermissionsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/AddApplicationCommandPermissionsOptions',
 				AddGuildMemberOptions: 'https://discord.js.org/#/docs/main/stable/typedef/AddGuildMemberOptions',
 				AgentOptions: 'https://discord.js.org/#/docs/main/stable/typedef/AgentOptions',
 				APIError: 'https://discord.js.org/#/docs/main/stable/typedef/APIError',
@@ -449,12 +453,16 @@ export const store = createStore<State>({
 				ApplicationAsset: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationAsset',
 				ApplicationCommandData: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandData',
 				ApplicationCommandOption: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOption',
-				ApplicationCommandOptionChoice: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionChoice',
+				ApplicationCommandOptionChoice:
+					'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionChoice',
 				ApplicationCommandOptionData: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionData',
 				ApplicationCommandOptionType: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandOptionType',
-				ApplicationCommandPermissionData: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissionData',
-				ApplicationCommandPermissions: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissions',
-				ApplicationCommandPermissionType: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissionType',
+				ApplicationCommandPermissionData:
+					'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissionData',
+				ApplicationCommandPermissions:
+					'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissions',
+				ApplicationCommandPermissionType:
+					'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandPermissionType',
 				ApplicationCommandResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandResolvable',
 				ApplicationCommandType: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationCommandType',
 				ApplicationResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/ApplicationResolvable',
@@ -468,7 +476,8 @@ export const store = createStore<State>({
 				AwaitReactionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/AwaitReactionsOptions',
 				BanOptions: 'https://discord.js.org/#/docs/main/stable/typedef/BanOptions',
 				Base64Resolvable: 'https://discord.js.org/#/docs/main/stable/typedef/Base64Resolvable',
-				BaseApplicationCommandPermissionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/BaseApplicationCommandPermissionsOptions',
+				BaseApplicationCommandPermissionsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/BaseApplicationCommandPermissionsOptions',
 				BaseFetchOptions: 'https://discord.js.org/#/docs/main/stable/typedef/BaseFetchOptions',
 				BaseMessageComponentOptions: 'https://discord.js.org/#/docs/main/stable/typedef/BaseMessageComponentOptions',
 				BaseMessageOptions: 'https://discord.js.org/#/docs/main/stable/typedef/BaseMessageOptions',
@@ -492,14 +501,16 @@ export const store = createStore<State>({
 				CollectorResetTimerOptions: 'https://discord.js.org/#/docs/main/stable/typedef/CollectorResetTimerOptions',
 				ColorResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/ColorResolvable',
 				CommandInteractionOption: 'https://discord.js.org/#/docs/main/stable/typedef/CommandInteractionOption',
-				CommandInteractionResolvedData: 'https://discord.js.org/#/docs/main/stable/typedef/CommandInteractionResolvedData',
+				CommandInteractionResolvedData:
+					'https://discord.js.org/#/docs/main/stable/typedef/CommandInteractionResolvedData',
 				Constants: 'https://discord.js.org/#/docs/main/stable/typedef/Constants',
 				CreateInviteOptions: 'https://discord.js.org/#/docs/main/stable/typedef/CreateInviteOptions',
 				CreateRoleOptions: 'https://discord.js.org/#/docs/main/stable/typedef/CreateRoleOptions',
 				CrosspostedChannel: 'https://discord.js.org/#/docs/main/stable/typedef/CrosspostedChannel',
 				DateResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/DateResolvable',
 				DeconstructedSnowflake: 'https://discord.js.org/#/docs/main/stable/typedef/DeconstructedSnowflake',
-				DefaultMessageNotificationLevel: 'https://discord.js.org/#/docs/main/stable/typedef/DefaultMessageNotificationLevel',
+				DefaultMessageNotificationLevel:
+					'https://discord.js.org/#/docs/main/stable/typedef/DefaultMessageNotificationLevel',
 				EditGuildTemplateOptions: 'https://discord.js.org/#/docs/main/stable/typedef/EditGuildTemplateOptions',
 				EmbedField: 'https://discord.js.org/#/docs/main/stable/typedef/EmbedField',
 				EmbedFieldData: 'https://discord.js.org/#/docs/main/stable/typedef/EmbedFieldData',
@@ -508,7 +519,8 @@ export const store = createStore<State>({
 				EscapeMarkdownOptions: 'https://discord.js.org/#/docs/main/stable/typedef/EscapeMarkdownOptions',
 				ExplicitContentFilterLevel: 'https://discord.js.org/#/docs/main/stable/typedef/ExplicitContentFilterLevel',
 				Features: 'https://discord.js.org/#/docs/main/stable/typedef/Features',
-				FetchApplicationCommandOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchApplicationCommandOptions',
+				FetchApplicationCommandOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/FetchApplicationCommandOptions',
 				FetchArchivedThreadOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchArchivedThreadOptions',
 				FetchBanOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchBanOptions',
 				FetchBansOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchBansOptions',
@@ -521,10 +533,12 @@ export const store = createStore<State>({
 				FetchMemberOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchMemberOptions',
 				FetchMembersOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchMembersOptions',
 				FetchReactionUsersOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchReactionUsersOptions',
-				FetchRecommendedShardsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchRecommendedShardsOptions',
+				FetchRecommendedShardsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/FetchRecommendedShardsOptions',
 				FetchThreadsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FetchThreadsOptions',
 				FileOptions: 'https://discord.js.org/#/docs/main/stable/typedef/FileOptions',
-				GuildApplicationCommandPermissionData: 'https://discord.js.org/#/docs/main/stable/typedef/GuildApplicationCommandPermissionData',
+				GuildApplicationCommandPermissionData:
+					'https://discord.js.org/#/docs/main/stable/typedef/GuildApplicationCommandPermissionData',
 				GuildAuditLogsFetchOptions: 'https://discord.js.org/#/docs/main/stable/typedef/GuildAuditLogsFetchOptions',
 				GuildBanResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/GuildBanResolvable',
 				GuildChannelCloneOptions: 'https://discord.js.org/#/docs/main/stable/typedef/GuildChannelCloneOptions',
@@ -535,7 +549,8 @@ export const store = createStore<State>({
 				GuildEditData: 'https://discord.js.org/#/docs/main/stable/typedef/GuildEditData',
 				GuildEmojiCreateOptions: 'https://discord.js.org/#/docs/main/stable/typedef/GuildEmojiCreateOptions',
 				GuildEmojiEditData: 'https://discord.js.org/#/docs/main/stable/typedef/GuildEmojiEditData',
-				GuildInvitableChannelResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/GuildInvitableChannelResolvable',
+				GuildInvitableChannelResolvable:
+					'https://discord.js.org/#/docs/main/stable/typedef/GuildInvitableChannelResolvable',
 				GuildListMembersOptions: 'https://discord.js.org/#/docs/main/stable/typedef/GuildListMembersOptions',
 				GuildMemberEditData: 'https://discord.js.org/#/docs/main/stable/typedef/GuildMemberEditData',
 				GuildMemberResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/GuildMemberResolvable',
@@ -551,7 +566,8 @@ export const store = createStore<State>({
 				GuildVoiceChannelResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/GuildVoiceChannelResolvable',
 				GuildWidgetSettings: 'https://discord.js.org/#/docs/main/stable/typedef/GuildWidgetSettings',
 				GuildWidgetSettingsData: 'https://discord.js.org/#/docs/main/stable/typedef/GuildWidgetSettingsData',
-				HasApplicationCommandPermissionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/HasApplicationCommandPermissionsOptions',
+				HasApplicationCommandPermissionsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/HasApplicationCommandPermissionsOptions',
 				HTTPAttachmentData: 'https://discord.js.org/#/docs/main/stable/typedef/HTTPAttachmentData',
 				HTTPErrorData: 'https://discord.js.org/#/docs/main/stable/typedef/HTTPErrorData',
 				HTTPOptions: 'https://discord.js.org/#/docs/main/stable/typedef/HTTPOptions',
@@ -562,7 +578,8 @@ export const store = createStore<State>({
 				IntentsResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/IntentsResolvable',
 				InteractionCollectorOptions: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionCollectorOptions',
 				InteractionDeferReplyOptions: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionDeferReplyOptions',
-				InteractionDeferUpdateOptions: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionDeferUpdateOptions',
+				InteractionDeferUpdateOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/InteractionDeferUpdateOptions',
 				InteractionReplyOptions: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionReplyOptions',
 				InteractionResponseType: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionResponseType',
 				InteractionType: 'https://discord.js.org/#/docs/main/stable/typedef/InteractionType',
@@ -576,8 +593,10 @@ export const store = createStore<State>({
 				MakeErrorOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MakeErrorOptions',
 				MembershipState: 'https://discord.js.org/#/docs/main/stable/typedef/MembershipState',
 				MessageActionRowComponent: 'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowComponent',
-				MessageActionRowComponentOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowComponentOptions',
-				MessageActionRowComponentResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowComponentResolvable',
+				MessageActionRowComponentOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowComponentOptions',
+				MessageActionRowComponentResolvable:
+					'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowComponentResolvable',
 				MessageActionRowOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageActionRowOptions',
 				MessageActivity: 'https://discord.js.org/#/docs/main/stable/typedef/MessageActivity',
 				MessageButtonOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageButtonOptions',
@@ -585,10 +604,12 @@ export const store = createStore<State>({
 				MessageButtonStyleResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/MessageButtonStyleResolvable',
 				MessageCollectorOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageCollectorOptions',
 				MessageComponent: 'https://discord.js.org/#/docs/main/stable/typedef/MessageComponent',
-				MessageComponentCollectorOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentCollectorOptions',
+				MessageComponentCollectorOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentCollectorOptions',
 				MessageComponentOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentOptions',
 				MessageComponentType: 'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentType',
-				MessageComponentTypeResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentTypeResolvable',
+				MessageComponentTypeResolvable:
+					'https://discord.js.org/#/docs/main/stable/typedef/MessageComponentTypeResolvable',
 				MessageEditOptions: 'https://discord.js.org/#/docs/main/stable/typedef/MessageEditOptions',
 				MessageEmbedAuthor: 'https://discord.js.org/#/docs/main/stable/typedef/MessageEmbedAuthor',
 				MessageEmbedFooter: 'https://discord.js.org/#/docs/main/stable/typedef/MessageEmbedFooter',
@@ -637,13 +658,15 @@ export const store = createStore<State>({
 				RawEmoji: 'https://discord.js.org/#/docs/main/stable/typedef/RawEmoji',
 				RawOverwriteData: 'https://discord.js.org/#/docs/main/stable/typedef/RawOverwriteData',
 				ReactionCollectorOptions: 'https://discord.js.org/#/docs/main/stable/typedef/ReactionCollectorOptions',
-				RemoveApplicationCommandPermissionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/RemoveApplicationCommandPermissionsOptions',
+				RemoveApplicationCommandPermissionsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/RemoveApplicationCommandPermissionsOptions',
 				ReplyMessageOptions: 'https://discord.js.org/#/docs/main/stable/typedef/ReplyMessageOptions',
 				ReplyOptions: 'https://discord.js.org/#/docs/main/stable/typedef/ReplyOptions',
 				ResolvedOverwriteOptions: 'https://discord.js.org/#/docs/main/stable/typedef/ResolvedOverwriteOptions',
 				RoleData: 'https://discord.js.org/#/docs/main/stable/typedef/RoleData',
 				RoleResolvable: 'https://discord.js.org/#/docs/main/stable/typedef/RoleResolvable',
-				SetApplicationCommandPermissionsOptions: 'https://discord.js.org/#/docs/main/stable/typedef/SetApplicationCommandPermissionsOptions',
+				SetApplicationCommandPermissionsOptions:
+					'https://discord.js.org/#/docs/main/stable/typedef/SetApplicationCommandPermissionsOptions',
 				SetChannelPositionOptions: 'https://discord.js.org/#/docs/main/stable/typedef/SetChannelPositionOptions',
 				SetParentOptions: 'https://discord.js.org/#/docs/main/stable/typedef/SetParentOptions',
 				SetRolePositionOptions: 'https://discord.js.org/#/docs/main/stable/typedef/SetRolePositionOptions',
