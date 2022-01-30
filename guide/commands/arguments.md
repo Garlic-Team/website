@@ -10,7 +10,7 @@ If you want to add arguments to the command, you have more options. Now, we'll s
 First, you need to import the `ArgumentType` enum and `Argument` class, which we will be using a lot.
 
 ```js
-const { MessagEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const { Command, CommandType, Argument, ArgumentType } = require('gcommands');
 
 new Command({
@@ -58,16 +58,16 @@ new Command({
                 },
                 {
                     name: 'Joined At',
-                    value: member.joinedAt,
+                    value: member.joinedAt.toString(),
                     inline: true,
                 },
                 {
                     name: 'Created At',
-                    value: member.user.createdAt,
+                    value: member.user.createdAt.toString(),
                     inline: true,
                 }
             ])
-            .setColor(member.displayHexColor)
+            .setColor(member.displayHexColor || "RANDOM")
             .setThumbnail(member.user.displayAvatarURL({ dynamic: true }))
             .setTimestamp();
 
@@ -213,44 +213,51 @@ new Command({
                 })
             ]
         }),
-        new Argument({
-            name: 'add',
-            description: 'Add role for user',
-            type: ArgumentType.SUB_COMMAND,
-            options: [
-                new Argument({
-                    name: 'role',
-                    description: 'Select role',
-                    type: ArgumentType.ROLE,
-                    required: true,
-                }),
-                new Argument({
-                    name: 'user',
-                    description: 'Select user',
-                    type: ArgumentType.USER,
-                    required: true,
-                })
-            ]
-        }),
-        new Argument({
-            name: 'remove',
-            description: 'Remove role from user',
-            type: ArgumentType.SUB_COMMAND,
-            options: [
-                new Argument({
-                    name: 'role',
-                    description: 'Select role',
-                    type: ArgumentType.ROLE,
-                    required: true,
-                }),
-                new Argument({
-                    name: 'user',
-                    description: 'Select user',
-                    type: ArgumentType.USER,
-                    required: true,
-                })
-            ]
-        })
+    	new Argument({
+      		name: 'single',
+      		description: 'Role for single user',
+      		type: ArgumentType.SUB_COMMAND_GROUP,
+      		options: [
+        		new Argument({
+          			name: 'add',
+          			description: 'Add role for user',
+          			type: ArgumentType.SUB_COMMAND,
+          			options: [
+            			new Argument({
+              				name: 'role',
+              				description: 'Select role',
+              				type: ArgumentType.ROLE,
+              				required: true,
+            			}),
+           				new Argument({
+              				name: 'user',
+              				description: 'Select user',
+              				type: ArgumentType.USER,
+              				required: true,
+            			})
+          			]
+        		}),
+        		new Argument({
+         			name: 'remove',
+          			description: 'Remove role from user',
+          			type: ArgumentType.SUB_COMMAND,
+          			options: [
+            			new Argument({
+              				name: 'role',
+              				description: 'Select role',
+              				type: ArgumentType.ROLE,
+              				required: true,
+            			}),
+            			new Argument({
+              				name: 'user',
+              				description: 'Select user',
+              				type: ArgumentType.USER,
+              				required: true,
+            			})
+          		    ]
+        		})
+      		]
+    })
     ],
     run: async(ctx) => {
         // Now let's detect what sub command group was used.
@@ -292,6 +299,13 @@ new Command({
 
             if (sub === 'add') {
                 // Add role to user
+		if (member.roles.cache.has(role.id)) {
+                    ctx.reply({
+                        content: 'You already have this role!',
+                        ephemeral: true,
+                    })
+                    return;
+                }
                 member.roles.add(role)
                     .then(() => {
                         ctx.reply({
@@ -299,35 +313,34 @@ new Command({
                             ephemeral: true,
                         })
                     })
-                    .catch(e => {
-                        ctx.reply({
-                            content: e,
-                            ephemeral: true,
-                        })
-                    });
-            } else {
-                // Remove role from user
-                if (member.roles.cache.has(role.id)) {
+                .catch(e => {
                     ctx.reply({
-                        content: 'You have this role!',
+                        content: e,
+                        ephemeral: true,
+                    })
+                });
+            } else {
+               // Remove role from user
+                 if (!member.roles.cache.has(role.id)) {
+                    ctx.reply({
+                        content: 'You don\'t have this role!',
                         ephemeral: true,
                     })
                     return;
                 }
-
                 member.roles.remove(role)
                     .then(() => {
                         ctx.reply({
                             content: 'Removed!',
                             ephemeral: true,
-                        })
                     })
-                    .catch(e => {
-                        ctx.reply({
-                            content: e,
-                            ephemeral: true,
-                        })
-                    });
+                })
+                .catch(e => {
+                    ctx.reply({
+                        content: e,
+                        ephemeral: true,
+                    })
+                });
             }
         }
     }
