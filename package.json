@@ -18,7 +18,7 @@
 	},
 	"license": "Apache-2.0",
 	"dependencies": {
-		"@headlessui/vue": "^1.4.0",
+		"@headlessui/vue": "^1.4.2",
 		"@vueuse/core": "^5.2.0",
 		"@vueuse/head": "^0.6.0",
 		"common-tags": "^1.8.0",
