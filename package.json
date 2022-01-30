@@ -20,7 +20,7 @@
 	"dependencies": {
 		"@headlessui/vue": "^1.4.0",
 		"@vueuse/core": "^5.2.0",
-		"@vueuse/head": "^0.6.0",
+		"@vueuse/head": "^0.7.4",
 		"common-tags": "^1.8.0",
 		"focus-visible": "^5.2.0",
 		"highlight.js": "^11.1.0",
