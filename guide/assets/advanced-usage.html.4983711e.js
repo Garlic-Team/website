@@ -1,0 +1,1 @@
+const e={key:"v-23ad1bb6",path:"/inhibitors/advanced-usage.html",title:"Advanced Usage",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"inhibitors/advanced-usage.md",git:{updatedTime:164357719e4}};export{e as data};
