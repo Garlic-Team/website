@@ -8,20 +8,20 @@ verify your installation with `node -v` in your terminal.
 :::: code-group
 ::: code-group-item npm
 ```sh:no-line-numbers
-npm install gcommands discord.js
-npm install gcommands@next discord.js # for unstable, development next version
+npm install gcommands discord.js @discordjs/rest discord-api-types
+npm install gcommands@next discord.js @discordjs/rest discord-api-types # for unstable, development next version
 ```
 :::
 ::: code-group-item yarn
 ```sh:no-line-numbers
-yarn add gcommands discord.js
-yarn add gcommands@next discord.js # for unstable, development next version
+yarn add gcommands discord.js @discordjs/rest discord-api-types
+yarn add gcommands@next discord.js @discordjs/rest discord-api-types # for unstable, development next version
 ```
 :::
 ::: code-group-item pnpm
 ```sh:no-line-numbers
-pnpm add gcommands discord.js
-yarn add gcommands@next discord.js # for unstable, development next version
+pnpm add gcommands discord.js @discordjs/rest discord-api-types
+yarn add gcommands@next discord.js @discordjs/rest discord-api-types # for unstable, development next version
 ```
 :::
 ::::
