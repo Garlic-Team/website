@@ -16,20 +16,20 @@ Remember the first command you created? We are going to modify its run function 
 // Create a new action row with a button
 const row = new MessageActionRow().addComponents([
 	new MessageButton()
-		.setCustomId(CustomId('hello', ctx.userId))
+		.setCustomId(customId('hello', ctx.userId))
 		.setLabel('Click me!')
 		.setStyle('SUCCESS')
 	])
 
 // Reply with the button
-return ctx.reply({ content: `Hello ${ctx.username}!`, components: [row] });
+return ctx.reply({ content: `Hello ${ctx.user.username}!`, components: [row] });
 ```
 
 Make sure to add the import statements for `MessageActionRow`, `MessageButton` and `CustomId` at the top of the file.
 
 ```js
 const { MessageActionRow, MessageButton } = require('discord.js');
-const { CustomId } = require('gcommands');
+const { customId } = require('gcommands');
 
 // Other code
 ```
@@ -69,7 +69,7 @@ new Component({
 	type: [ ComponentType.BUTTON ],
 	// The function thats called when the button is pressed
 	run: (ctx) => {
-		return ctx.reply(`Hello again ${ctx.username}!`);
+		return ctx.reply(`Hello again ${ctx.user.username}!`);
 	}
 });
 ```
@@ -92,7 +92,7 @@ new class extends Component {
 
 	// The function thats called when the button is pressed
 	run(ctx) {
-		return ctx.reply(`Hello again ${ctx.username}!`);
+		return ctx.reply(`Hello again ${ctx.user.username}!`);
 	}
 };
 ```

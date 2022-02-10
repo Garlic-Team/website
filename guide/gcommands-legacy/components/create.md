@@ -19,9 +19,9 @@ We can set the `name` (customid name, string or regExp), `type` and `userRequire
 
 It is recommended to use the `CustomId` class for creating custom id's like this:
 ```js
-const { CustomId, Button } = require("gcommands");
+const { customId, Button } = require("gcommands");
 
-const customId = new CustomId({ name: "hello", ids: [author.id] }); // This will create a custom id looking like this: hello-{some_id}
+const customId = new customId({ name: "hello", ids: [author.id] }); // This will create a custom id looking like this: hello-{some_id}
 
 new Button().setCustomId(customId.get())
 ```
