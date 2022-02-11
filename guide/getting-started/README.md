@@ -99,4 +99,9 @@ Don't forget to create `commands`, `components`, `listeners` folders. If you don
 In any case, do not store the token in `index.js` and preferably not in any `configs.js,ts,json`. Use the [enviroment file](https://dev.to/aadilraza339/what-is-env-file-in-node-js-3h6c). Read more [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#your-token)
 :::
 
+::: warning
+If you have slash commands, don't forget to invite bot with `application.commands`!  
+Example Url: [https://discord.com/api/oauth2/authorize?client_id={YOUR_CLIENT_ID}&permissions=0&scope=bot%20applications.commands](https://discord.com/api/oauth2/authorize?client_id={YOUR_CLIENT_ID}&permissions=0&scope=bot%20applications.commands)
+:::
+
 That's it! Try running `node index.js` in your terminal!

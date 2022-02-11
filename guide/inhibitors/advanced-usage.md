@@ -4,7 +4,7 @@ For example, when you have an inhibitor `MemberRoles`, `UserOnly`, `ClientRoles`
 If you wanted to make a command just for server boosters, you would have to put a condition in the command or create a custom inhibitor. We come up with a simpler solution.
 
 ::: danger
-Available only in `>=9.0.2`
+Available only in `>=9.1.0`
 :::
 
 If you want to dynamically retrieve ids, you can use the `getIds` function.  
