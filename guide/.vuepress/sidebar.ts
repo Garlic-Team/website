@@ -174,7 +174,8 @@ export default {
 		{
 			text: 'Additional Information',
 			children: [
-				'/additional-information/changes-in-v9.md'
+				'/additional-information/changes-in-v9.md',
+				'/additional-information/sharder.md'
 			]
 		}
 	],

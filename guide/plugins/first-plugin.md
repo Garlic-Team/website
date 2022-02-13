@@ -21,7 +21,7 @@ We have registered a listeners folder that we will keep in the plugin. Then all 
 ### Package
 ```
 ├── node_modules
-    └── gcommands-plugin-my-pluginň
+    └── gcommands-plugin-my-plugin
         └── listeners
             └── ready.js
         └── index.js

@@ -77,7 +77,7 @@ const client = new GClient({
 });
 
 // Login to the discord API
-client.login(process.env.token);
+client.login(process.env.TOKEN);
 ```
 :::
 
