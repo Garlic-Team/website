@@ -22,7 +22,7 @@ yarn add gcommands@next # for unstable, development next version
 ::: code-group-item pnpm
 ```sh:no-line-numbers
 pnpm add gcommands
-yarn add gcommands@next # for unstable, development next version
+pnpm add gcommands@next # for unstable, development next version
 ```
 :::
 ::::
