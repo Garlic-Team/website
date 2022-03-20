@@ -10,8 +10,8 @@ GCommands already comes with default inhibitors and these are:
 -   `Nsfw`
 -   `Or`
 -   `UserOnly`
--   `UserPermissions`
--   `UserRoles`
+-   `MemberPermissions`
+-   `MemberRoles`
 
 Simply import them in the command, and then add them to the `inhibitors` parameter.
 
