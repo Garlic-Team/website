@@ -1,0 +1,1 @@
+const e={key:"v-cfb6f914",path:"/gcommands-legacy/events/create.html",title:"Creating a event",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Resulting code",slug:"resulting-code",children:[]}],filePathRelative:"gcommands-legacy/events/create.md",git:{updatedTime:1647772232e3}};export{e as data};

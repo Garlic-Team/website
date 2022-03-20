@@ -1,1 +1,0 @@
-const t={key:"v-d12d9804",path:"/additional-information/sharder.html",title:"Sharding your bot",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"additional-information/sharder.md",git:{updatedTime:164475235e4}};export{t as data};
