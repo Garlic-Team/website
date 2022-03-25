@@ -52,7 +52,7 @@ new Command({
                     inline: true,
                 },
                 {
-                    name: 'Timeout'
+                    name: 'Timeout',
                     value: member.isCommunicationDisabled ? member.communicationDisabledUntil : '❌',
                     inline: true,
                 },
