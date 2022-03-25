@@ -1,0 +1,1 @@
+const e={key:"v-92b4817a",path:"/gcommands-legacy/events/setup.html",title:"Setup",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/events/setup.md",git:{updatedTime:1648225274e3}};export{e as data};
