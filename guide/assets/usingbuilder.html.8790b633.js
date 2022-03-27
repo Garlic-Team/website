@@ -1,1 +1,0 @@
-const e={key:"v-baa6800a",path:"/gcommands-legacy/events/usingbuilder.html",title:"Using the event builder",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/events/usingbuilder.md",git:{updatedTime:1648225274e3}};export{e as data};
