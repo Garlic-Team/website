@@ -25,7 +25,7 @@ args: [
         name: 'user',
         description: 'View permissions of a user',
         type: ArgumentType.SUB_COMMAND,
-        options: [
+        arguments: [
             {
                 name: 'target',
                 description: 'The user to target',
@@ -37,7 +37,7 @@ args: [
         name: 'role',
         description: 'View permissions of a role',
         type: ArgumentType.SUB_COMMAND,
-        options: [
+        arguments: [
             {
                 name: 'target',
                 description: 'The role to target',
@@ -105,7 +105,7 @@ module.exports = class extends Command {
                     name: 'user',
                     description: 'View permissions of a user',
                     type: ArgumentType.SUB_COMMAND,
-                    options: [
+                    arguments: [
                         {
                             name: 'target',
                             description: 'The user to target',
@@ -117,7 +117,7 @@ module.exports = class extends Command {
                     name: 'role',
                     description: 'View permissions of a role',
                     type: ArgumentType.SUB_COMMAND,
-                    options: [
+                    arguments: [
                         {
                             name: 'target',
                             description: 'The role to target',

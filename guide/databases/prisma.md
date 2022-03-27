@@ -136,7 +136,7 @@ new Command({
             name: 'create',
             description: 'Create a new tag',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'name',
                     description: 'The name for the tag',
@@ -155,7 +155,7 @@ new Command({
             name: 'find',
             description: 'Find a tag',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'name',
                     description: 'The name of the tag',
@@ -168,7 +168,7 @@ new Command({
             name: 'edit',
             description: 'Edit a tag',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'name',
                     description: 'The of the tag',
@@ -187,7 +187,7 @@ new Command({
             name: 'info',
             description: 'View specific info on a tag',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'name',
                     description: 'The name of the tag',
@@ -205,7 +205,7 @@ new Command({
             name: 'delete',
             description: 'Delete a tag',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'name',
                     description: 'The name of the tag',

@@ -104,7 +104,7 @@ new Command({
             name: 'add',
             description: 'Add money for user',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'user',
                     description: 'Select user',
@@ -117,7 +117,7 @@ new Command({
             name: 'remove',
             description: 'Remove money from user',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'user',
                     description: 'Select user',
@@ -130,7 +130,7 @@ new Command({
             name: 'check',
             description: 'Check user balance',
             type: ArgumentType.SUB_COMMAND,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'user',
                     description: 'Select user',
@@ -184,12 +184,12 @@ new Command({
             name: 'mass',
             description: 'Role for everyone',
             type: ArgumentType.SUB_COMMAND_GROUP,
-            options: [
+            arguments: [
                 new Argument({
                     name: 'add',
                     description: 'Add role (everyone)',
                     type: ArgumentType.SUB_COMMAND,
-                    options: [
+                    arguments: [
                         new Argument({
                             name: 'role',
                             description: 'Select role',
@@ -202,7 +202,7 @@ new Command({
                     name: 'remove',
                     description: 'Remove role (everyone)',
                     type: ArgumentType.SUB_COMMAND,
-                    options: [
+                    arguments: [
                         new Argument({
                             name: 'role',
                             description: 'Select role',
@@ -217,12 +217,12 @@ new Command({
       		name: 'single',
       		description: 'Role for single user',
       		type: ArgumentType.SUB_COMMAND_GROUP,
-      		options: [
+      		arguments: [
         		new Argument({
           			name: 'add',
           			description: 'Add role for user',
           			type: ArgumentType.SUB_COMMAND,
-          			options: [
+          			arguments: [
             			new Argument({
               				name: 'role',
               				description: 'Select role',
@@ -241,7 +241,7 @@ new Command({
          			name: 'remove',
           			description: 'Remove role from user',
           			type: ArgumentType.SUB_COMMAND,
-          			options: [
+          			arguments: [
             			new Argument({
               				name: 'role',
               				description: 'Select role',
