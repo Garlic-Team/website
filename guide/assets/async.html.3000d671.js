@@ -1,0 +1,1 @@
+const e={key:"v-6649e442",path:"/hyttpo/other/async.html",title:"Async",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Example code",slug:"example-code",children:[]},{level:2,title:"Learn",slug:"learn",children:[]}],filePathRelative:"hyttpo/other/async.md",git:{updatedTime:1649570635e3}};export{e as data};

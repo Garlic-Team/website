@@ -1,0 +1,1 @@
+const e={key:"v-02168fbd",path:"/gcommands-legacy/other/inhibitor.html",title:"Inhibitor",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/other/inhibitor.md",git:{updatedTime:1649570635e3}};export{e as data};
