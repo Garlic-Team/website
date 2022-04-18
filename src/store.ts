@@ -87,13 +87,13 @@ export const store = createStore<State>({
 				fetch('https://api.github.com/repos/Garlic-Team/GCommands/stats/contributors').then(toJSON, noop),
 			]);
 
-			if (fetchedDownloads) {
+			if (fetchedDownloads?.downloads) {
 				downloads = 0;
 				for (const item of fetchedDownloads.downloads) {
 					downloads += item.downloads;
 				}
 			}
-			if (fetchedStars) {
+			if (fetchedStars?.stargazers_count) {
 				stars = fetchedStars.stargazers_count;
 			}
 			if (fetchedContributors) {
