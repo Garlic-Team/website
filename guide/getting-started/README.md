@@ -68,6 +68,8 @@ const client = new GClient({
 		join(__dirname, 'components'),
 		join(__dirname, 'listeners')
 	],
+	// Enable message support
+	messageSupport: true,
 	// Set the prefix for message commands
 	messagePrefix: '!',
 	// Set the guild where you will be developing your bot. This is usefull cause guild slash commands update instantly.
