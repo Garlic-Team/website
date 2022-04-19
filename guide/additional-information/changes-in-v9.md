@@ -1,4 +1,4 @@
-# Upgrading from legacy to v9 (next gcommands)
+# Upgrading from legacy to v9
 
 ## Before you start
 
