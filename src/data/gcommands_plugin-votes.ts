@@ -8,7 +8,7 @@ export default new DocsSource({
 	name: '@gcommands/plugin-votes',
 	global: 'PluginVotes',
 	docsRepo: 'Garlic-Team/docs',
-	repo: 'Garlic-Team/gcommands-addons',
+	repo: 'Garlic-Team/gcommands-addons/tree/master/packages/plugin-votes',
 	defaultTag: 'master',
 	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('renovate/') && !branch.startsWith('chore/'),
 	tagFilter: (tag: string) => semver.gte(tag.replace(/(^@.*\/.*@v?)?(?<semver>\d+.\d+.\d+)-?.*/, '$<semver>'), '9.0.0'),
