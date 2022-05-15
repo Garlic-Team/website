@@ -45,26 +45,27 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from '@vueuse/head';
+import highlight from 'highlight.js';
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-import highlight from 'highlight.js';
-highlight.configure({ ignoreUnescapedHTML: true });
-
-import { useStore } from '~/store';
-import { markdown } from '~/util/markdown';
-import { convertLinks } from '~/util/convertLinks';
-import { typeKey } from '~/util/typeKey';
-import { scopedName } from '~/util/scopedName';
-
+import ClassEvent from '~/components/ClassEvent.vue';
+import ClassMethod from '~/components/ClassMethod.vue';
+import ClassOverview from '~/components/ClassOverview.vue';
+import ClassProperty from '~/components/ClassProperty.vue';
+import ParameterTable from '~/components/ParameterTable.vue';
 import SourceButton from '~/components/SourceButton.vue';
 import TypeLink from '~/components/TypeLink.vue';
 import Types from '~/components/Types.vue';
-import ParameterTable from '~/components/ParameterTable.vue';
-import ClassOverview from '~/components/ClassOverview.vue';
-import ClassProperty from '~/components/ClassProperty.vue';
-import ClassMethod from '~/components/ClassMethod.vue';
-import ClassEvent from '~/components/ClassEvent.vue';
+import { useStore } from '~/store';
+import { usePreferredReducedMotion } from '~/util/ReducedMotion';
+import { convertLinks } from '~/util/convertLinks';
+import { markdown } from '~/util/markdown';
+import { scopedName } from '~/util/scopedName';
 import { isShowPrivates } from '~/util/showPrivates';
+import { typeKey } from '~/util/typeKey';
+
+highlight.configure({ ignoreUnescapedHTML: true });
 
 const router = useRouter();
 const route = useRoute();
@@ -77,6 +78,7 @@ const docs = computed(() => store.state.docs);
 const cls = docs.value?.classes.find((cls) => cls.name === route.params.class);
 
 // @ts-expect-error
+// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 const description = computed(() => markdown(convertLinks(cls?.description, docs.value, router, route)));
 const constructorParameters = computed(() => {
 	if (!cls?.construct || !cls.construct.params) {
@@ -115,13 +117,17 @@ const methods = computed(() => {
 
 const typeToArray = (type: any) => type as string[];
 
+useHead({
+	title: computed(() => `discord.js | ${cls?.name ?? ''}`),
+});
+
 onMounted(() => {
 	const element = document.getElementById(`doc-for-${route.query.scrollTo as string}`);
-	element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+	element?.scrollIntoView({ behavior: usePreferredReducedMotion.value ? undefined : 'smooth', block: 'start' });
 
 	const containerElement = document.getElementById('container');
 	if (!route.query.scrollTo && containerElement && containerElement.scrollTop > 200) {
-		containerElement.scrollTo({ top: 0, behavior: 'smooth' });
+		containerElement.scrollTo({ top: 0, behavior: usePreferredReducedMotion.value ? undefined : 'smooth' });
 	}
 
 	if (codeblock.value) {
@@ -133,7 +139,7 @@ watch(
 	() => route.query.scrollTo,
 	() => {
 		const element = document.getElementById(`doc-for-${route.query.scrollTo as string}`);
-		element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		element?.scrollIntoView({ behavior: usePreferredReducedMotion.value ? undefined : 'smooth', block: 'start' });
 	},
 );
 </script>

@@ -49,19 +49,19 @@
 </template>
 
 <script setup lang="ts">
+import { useHead } from '@vueuse/head';
 import { computed, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
-
-import { useStore } from '~/store';
-import { markdown } from '~/util/markdown';
-import { convertLinks } from '~/util/convertLinks';
-import { typeKey } from '~/util/typeKey';
-
-import SourceButton from '~/components/SourceButton.vue';
 import ExpandableTypes from '~/components/ExpandableTypes.vue';
-import Types from '~/components/Types.vue';
 import ParameterTable from '~/components/ParameterTable.vue';
 import See from '~/components/See.vue';
+import SourceButton from '~/components/SourceButton.vue';
+import Types from '~/components/Types.vue';
+import { useStore } from '~/store';
+import { usePreferredReducedMotion } from '~/util/ReducedMotion';
+import { convertLinks } from '~/util/convertLinks';
+import { markdown } from '~/util/markdown';
+import { typeKey } from '~/util/typeKey';
 
 const router = useRouter();
 const route = useRoute();
@@ -74,10 +74,14 @@ const typedef = docs.value?.typedefs.find((typedef) => typedef.name === route.pa
 // @ts-expect-error
 const description = computed(() => markdown(convertLinks(typedef?.description, docs.value, router, route)));
 
+useHead({
+	title: computed(() => `discord.js | ${typedef?.name ?? ''}`),
+});
+
 onMounted(() => {
 	const containerElement = document.getElementById('container');
 	if (containerElement && containerElement.scrollTop > 200) {
-		containerElement.scrollTo({ top: 0, behavior: 'smooth' });
+		containerElement.scrollTo({ top: 0, behavior: usePreferredReducedMotion.value ? undefined : 'smooth' });
 	}
 });
 </script>
