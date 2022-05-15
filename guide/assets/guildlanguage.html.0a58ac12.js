@@ -1,1 +1,0 @@
-const a={key:"v-06aa6753",path:"/gcommands-legacy/database/guildlanguage.html",title:"Guild Language",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/database/guildlanguage.md",git:{updatedTime:1650378664e3}};export{a as data};
