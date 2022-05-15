@@ -10,7 +10,6 @@ interface DocsSourceOptions {
 	docsRepo: string;
 	repo: string;
 	defaultTag?: string;
-	docsFolder?: string;
 	defaultFile?: { category: string; id: string };
 	source?: string;
 	branchFilter?: (branch: string) => boolean;
@@ -36,8 +35,6 @@ export default class DocsSource {
 	public defaultTag = this.options.defaultTag ?? 'main';
 
 	public defaultFile = this.options.defaultFile ?? { category: 'general', id: 'welcome' };
-
-	public docsFolder = this.options.docsFolder;
 
 	public source = this.options.source ?? `https://github.com/${this.repo}/blob/`;
 
@@ -119,7 +116,7 @@ export default class DocsSource {
 	}
 
 	public async fetchDocs(tag: string) {
-		const res = await fetch(`https://raw.githubusercontent.com/${this.docsRepo}${this.docsFolder ?? ''}/docs/${tag}.json`);
+		const res = await fetch(`https://raw.githubusercontent.com/${this.docsRepo}/main/${this.id}/${tag}.json`);
 		return json(res);
 	}
 }

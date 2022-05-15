@@ -7,6 +7,11 @@ import { createStore, useStore as baseUseStore, Store } from 'vuex';
 import DocsSource from './data/DocsSource';
 import MainSource from './data/MainSource';
 import HyttpoSource from '~/data/HyttpoSource';
+import GCommandsPluginVotesSource from '~/data/gcommands_plugin-votes';
+import GCommandsPluginCooldownsSource from '~/data/gcommands_plugin-cooldowns';
+import GCommandsPluginLanguageSource from '~/data/gcommands_plugin-language';
+import GCommandsPluginPremiumSource from '~/data/gcommands_plugin-premium';
+import GCommandsPluginBlacklistSource from '~/data/gcommands_plugin-blacklist';
 import { Documentation, DocumentationCustomFile } from './interfaces/Documentation';
 import { fetchError } from './util/fetchError';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
@@ -35,6 +40,11 @@ export const store = createStore<State>({
 		sources: [
 			{ source: MainSource, name: MainSource.name, id: MainSource.id },
 			{ source: HyttpoSource, name: HyttpoSource.name, id: HyttpoSource.id },
+			{ source: GCommandsPluginVotesSource, name: GCommandsPluginVotesSource.name, id: GCommandsPluginVotesSource.id },
+			{ source: GCommandsPluginCooldownsSource, name: GCommandsPluginCooldownsSource.name, id: GCommandsPluginCooldownsSource.id },
+			{ source: GCommandsPluginLanguageSource, name: GCommandsPluginLanguageSource.name, id: GCommandsPluginLanguageSource.id },
+			{ source: GCommandsPluginPremiumSource, name: GCommandsPluginPremiumSource.name, id: GCommandsPluginPremiumSource.id },
+			{ source: GCommandsPluginBlacklistSource, name: GCommandsPluginBlacklistSource.name, id: GCommandsPluginBlacklistSource.id },
 		],
 		source: MainSource,
 		tag: MainSource.defaultTag,

@@ -24,6 +24,11 @@ import Spinner from '~/components/Spinner.vue';
 
 import MainSource from '~/data/MainSource';
 import HyttpoSource from '~/data/HyttpoSource';
+import GCommandsPluginVotesSource from '~/data/gcommands_plugin-votes';
+import GCommandsPluginCooldownsSource from '~/data/gcommands_plugin-cooldowns';
+import GCommandsPluginLanguageSource from '~/data/gcommands_plugin-language';
+import GCommandsPluginPremiumSource from '~/data/gcommands_plugin-premium';
+import GCommandsPluginBlacklistSource from '~/data/gcommands_plugin-blacklist';
 import { useStore } from '~/store';
 import { fetchError } from '~/util/fetchError';
 
@@ -40,8 +45,13 @@ const { Ctrl_K } = useMagicKeys({
 });
 
 const sources = reactive({
-	main: MainSource,
+	[MainSource.id]: MainSource,
 	[HyttpoSource.id]: HyttpoSource,
+	[GCommandsPluginVotesSource.id]: GCommandsPluginVotesSource,
+	[GCommandsPluginCooldownsSource.id]: GCommandsPluginCooldownsSource,
+	[GCommandsPluginLanguageSource.id]: GCommandsPluginLanguageSource,
+	[GCommandsPluginPremiumSource.id]: GCommandsPluginPremiumSource,
+	[GCommandsPluginBlacklistSource.id]: GCommandsPluginBlacklistSource,
 });
 
 const showBackToTop = ref(false);
