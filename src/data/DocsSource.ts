@@ -1,9 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-argument */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import semver from 'semver';
 
 interface DocsSourceOptions {
 	id: string;
 	name: string;
 	global: string;
+	docsRepo: string;
 	repo: string;
 	defaultTag?: string;
 	docsFolder?: string;
@@ -13,7 +17,7 @@ interface DocsSourceOptions {
 	tagFilter?: (tag: string) => boolean;
 }
 
-const json = (res: Response) => {
+export const json = (res: Response) => {
 	if (!res.ok) throw new Error('Failed to fetch docs data file from GitHub');
 	return res.json();
 };
@@ -24,6 +28,8 @@ export default class DocsSource {
 	public name = this.options.name;
 
 	public global = this.options.global;
+
+	public docsRepo = this.options.docsRepo;
 
 	public repo = this.options.repo;
 
@@ -55,6 +61,7 @@ export default class DocsSource {
 				if (localStorage[`source-${this.id}`]) {
 					console.error(err);
 					const cache = JSON.parse(localStorage[`source-${this.id}`]);
+					// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 					return [cache.branches, cache.tags];
 				}
 				throw err;
@@ -92,6 +99,8 @@ export default class DocsSource {
 						continue;
 					}
 
+					// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+					tag.name = tag.name.replace(/(^@.*\/.*@v?)?(?<semver>\d+.\d+.\d+)-?.*/, '$<semver>');
 					// Make sure the tag is the latest patch version
 					if (semver.valid(tag.name)) {
 						const majorMinor = `${semver.major(tag.name)}.${semver.minor(tag.name)}`;
@@ -104,12 +113,13 @@ export default class DocsSource {
 					this.tags.push(tag.name);
 				}
 
+				// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 				return this.tags;
 			});
 	}
 
 	public async fetchDocs(tag: string) {
-		const res = await fetch(`https://raw.githubusercontent.com/${this.repo}${this.docsFolder ?? ''}/docs/${tag}.json`);
+		const res = await fetch(`https://raw.githubusercontent.com/${this.docsRepo}${this.docsFolder ?? ''}/docs/${tag}.json`);
 		return json(res);
 	}
 }
