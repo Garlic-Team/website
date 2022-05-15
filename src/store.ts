@@ -11,12 +11,6 @@ import { Documentation, DocumentationCustomFile } from './interfaces/Documentati
 import { fetchError } from './util/fetchError';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
 import { splitName } from './util/splitName';
-import BuildersSource from '~/data/BuildersSource';
-import CollectionSource from '~/data/CollectionSource';
-// import CommandoSource from '~/data/CommandoSource';
-import RESTSource from '~/data/RESTSource';
-import RPCSource from '~/data/RPCSource';
-import VoiceSource from '~/data/VoiceSource';
 
 export interface State {
 	sources: { source: DocsSource; name: string; id: string }[];

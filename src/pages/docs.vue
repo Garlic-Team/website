@@ -21,8 +21,6 @@ import { useRouter, useRoute } from 'vue-router';
 import BackToTop from '~/components/BackToTop.vue';
 import Sidebar from '~/components/Sidebar.vue';
 import Spinner from '~/components/Spinner.vue';
-import BuildersSource from '~/data/BuildersSource';
-import CollectionSource from '~/data/CollectionSource';
 
 import MainSource from '~/data/MainSource';
 import HyttpoSource from '~/data/HyttpoSource';
@@ -43,7 +41,6 @@ const { Ctrl_K } = useMagicKeys({
 
 const sources = reactive({
 	main: MainSource,
-	[MainSource.id]: MainSource,
 	[HyttpoSource.id]: HyttpoSource,
 });
 
