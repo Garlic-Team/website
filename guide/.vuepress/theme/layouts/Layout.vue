@@ -14,15 +14,6 @@
 			</template>
 		</Navbar>
 		<div class="content-wrapper">
-			<Notifications>
-				<Notification storage-key="v13-notice">
-					<span class="notification-icon"><PartyPopperIcon /></span>
-					<span>
-						You're browsing the guide for gcommands next.
-						Check out <router-link to="/whats-new.html">what's new</router-link>, or browse the <a href="https://garlic-team.js.org/guide/gcommands-latest">gcommands latest</a>.
-					</span>
-				</Notification>
-			</Notifications>
 			<div class="sidebar-mask" @click="toggleSidebar(false)"></div>
 			<div class="sidebar-wrapper">
 				<Sidebar>
