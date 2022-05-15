@@ -11,6 +11,6 @@ export default new DocsSource({
 	repo: 'Garlic-Team/hyttpo',
 	docsFolder: '/docs',
 	defaultTag: 'master',
-	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
+	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('renovate/'),
 	tagFilter: (tag: string) => semver.gt(tag.replace(/(^@.*\/.*@v?)?(?<semver>\d+.\d+.\d+)-?.*/, '$<semver>'), '0.4.1'),
 });
