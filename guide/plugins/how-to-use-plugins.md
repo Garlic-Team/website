@@ -48,7 +48,7 @@ That's it! Now we can use other events added by moreevents. For official plugins
 
 ## GCommands Plugin Language
 
-For the `@gcommands/pugin-language` plugin you can stay here for a while, because it has much more integration than it seems. With this plugin you are able to customize basic responses which you can find [here](https://github.com/Garlic-Team/gcommands/blob/next/src/responses.json).
+For the `@gcommands/plugin-language` plugin you can stay here for a while, because it has much more integration than it seems. With this plugin you are able to customize basic responses which you can find [here](https://github.com/Garlic-Team/gcommands/blob/next/src/responses.json).
 
 You just need to add the following to your lang file:
 ```json
