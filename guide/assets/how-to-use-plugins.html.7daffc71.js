@@ -1,0 +1,1 @@
+const e={key:"v-cdbf0f68",path:"/plugins/how-to-use-plugins.html",title:"What are plugins?",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"GCommands Plugin Language",slug:"gcommands-plugin-language",children:[]}],filePathRelative:"plugins/how-to-use-plugins.md",git:{updatedTime:1663226248e3}};export{e as data};

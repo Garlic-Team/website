@@ -1,1 +1,0 @@
-const e={key:"v-640d6b2c",path:"/gcommands-legacy/questions/commandrunoptions.html",title:"What are all the objects in the first argument of a command?",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/questions/commandrunoptions.md",git:{updatedTime:1652603542e3}};export{e as data};
