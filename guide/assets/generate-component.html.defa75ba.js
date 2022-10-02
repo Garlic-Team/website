@@ -1,0 +1,1 @@
+const e={key:"v-e1072268",path:"/cli/generate-component.html",title:"How to generate a component",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"cli/generate-component.md",git:{updatedTime:1664706907e3}};export{e as data};

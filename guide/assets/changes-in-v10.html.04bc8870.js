@@ -1,0 +1,1 @@
+const t={key:"v-82517d9c",path:"/additional-information/changes-in-v10.html",title:"Upgrading from v9 to v10",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"additional-information/changes-in-v10.md",git:{updatedTime:1664706907e3}};export{t as data};

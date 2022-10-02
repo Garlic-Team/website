@@ -1,1 +1,0 @@
-const e={key:"v-ccdc4da0",path:"/getting-started/",title:"Getting started",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Installing dependencies",slug:"installing-dependencies",children:[]},{level:2,title:"Basic client",slug:"basic-client",children:[]}],filePathRelative:"getting-started/README.md",git:{updatedTime:1663226248e3}};export{e as data};

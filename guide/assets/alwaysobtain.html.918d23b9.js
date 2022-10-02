@@ -1,1 +1,0 @@
-const a={key:"v-581527f7",path:"/gcommands-legacy/other/alwaysobtain.html",title:"The alwaysObtain option in commands",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"gcommands-legacy/other/alwaysobtain.md",git:{updatedTime:1663226248e3}};export{a as data};
