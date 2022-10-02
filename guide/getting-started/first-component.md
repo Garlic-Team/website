@@ -14,8 +14,8 @@ Remember the first command you created? We are going to modify its run function 
 
 ```js
 // Create a new action row with a button
-const row = new MessageActionRow().addComponents([
-	new MessageButton()
+const row = new ActionRowBuilder().addComponents([
+	new ButtonBuilder()
 		.setCustomId(customId('hello', ctx.userId))
 		.setLabel('Click me!')
 		.setStyle('SUCCESS')
@@ -25,10 +25,10 @@ const row = new MessageActionRow().addComponents([
 return ctx.reply({ content: `Hello ${ctx.user.username}!`, components: [row] });
 ```
 
-Make sure to add the import statements for `MessageActionRow`, `MessageButton` and `CustomId` at the top of the file.
+Make sure to add the import statements for `ActionRowBuilder`, `ButtonBuilder` and `CustomId` at the top of the file.
 
 ```js
-const { MessageActionRow, MessageButton } = require('discord.js');
+const { ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const { customId } = require('gcommands');
 
 // Other code

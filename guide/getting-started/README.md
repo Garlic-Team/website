@@ -42,7 +42,7 @@ Once created, we import [`GClient`](https://garlic-team.js.org/docs/#/docs/gcomm
 ```js
 require('dotenv').config();
 const { GClient, Plugins, Command, Component } = require('gcommands');
-const { Intents } = require('discord.js');
+const { GatewayIntentBits } = require('discord.js');
 const { join } = require('path');
 
 // Set the default cooldown for commands
@@ -75,7 +75,7 @@ const client = new GClient({
 	// Set the guild where you will be developing your bot. This is usefull cause guild slash commands update instantly.
 	devGuildId: process.env.DEV_SERVER,
 	// Set the intents you will be using (https://discordjs.guide/popular-topics/intents.html#gateway-intents)
-	intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
+	intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages],
 });
 
 // Login to the discord API

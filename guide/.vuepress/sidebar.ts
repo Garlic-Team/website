@@ -85,7 +85,7 @@ export default {
 			]
 		}
 	],
-	'/hyttpo/': [
+	/*'/hyttpo/': [
 		{
 			text: 'Home',
 			children: [
@@ -115,7 +115,7 @@ export default {
 				'/hyttpo/examples/downloader.md'
 			]
 		}
-	],
+	],*/
 	'/': [
 		{
 			text: 'Home',
@@ -175,6 +175,7 @@ export default {
 			text: 'Additional Information',
 			children: [
 				'/additional-information/changes-in-v9.md',
+				'/additional-information/changes-in-v10.md',
 				'/additional-information/sharder.md'
 			]
 		}

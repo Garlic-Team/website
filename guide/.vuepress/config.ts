@@ -39,10 +39,10 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 				text: 'GCommands Legacy',
 				link: '/gcommands-legacy/'
 			},
-			{
+			/*{
 				text: 'Hyttpo',
 				link: '/hyttpo/',
-			},
+			},*/
 			{
 				text: 'Documentation',
 				link: 'https://garlic-team.js.org/docs/',
